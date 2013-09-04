@@ -1,33 +1,75 @@
 <?php
 
-/**
- * UserIdentity represents the data needed to identity a user.
- * It contains the authentication method that checks if the provided
- * data can identity the user.
- */
 class UserIdentity extends CUserIdentity
 {
-	/**
-	 * Authenticates a user.
-	 * The example implementation makes sure if the username and password
-	 * are both 'demo'.
-	 * In practical applications, this should be changed to authenticate
-	 * against some persistent user identity storage (e.g. database).
-	 * @return boolean whether authentication succeeds.
-	 */
-	public function authenticate()
-	{
-		$users=array(
-			// username => password
-			'demo'=>'demo',
-			'admin'=>'admin',
-		);
-		if(!isset($users[$this->username]))
-			$this->errorCode=self::ERROR_USERNAME_INVALID;
-		elseif($users[$this->username]!==$this->password)
-			$this->errorCode=self::ERROR_PASSWORD_INVALID;
-		else
-			$this->errorCode=self::ERROR_NONE;
-		return !$this->errorCode;
-	}
+
+    private $soc_ident = null;
+    private $_id;
+    private $service;
+
+    public $user;
+
+
+    public function __construct($serv)
+    {
+        $this->soc_ident = $serv["service"];
+    }
+
+
+    public function getId()
+    {
+        return $this->_id;
+    }
+
+    public function getService()
+    {
+        return $this->service;
+    }
+
+
+    public function createUser($username, $email, $service_id)
+    {
+        $user = new User; //создаем нового юзера
+        $user->setAttribute("email", $email);
+        $user->setAttribute("google_service_id", $service_id);
+        $user->setAttribute("username", $username);
+        if (!$user->save()) { // сохраняем нового юзера
+            throw new CHttpException(403, 'Ошибка создания нового юзера.');
+        }
+        return $user;
+    }
+
+
+    public function authenticate()
+    {
+        if ($this->soc_ident instanceof EAuthUserIdentity) {
+
+            $user = User::model()->find('google_service_id=?', array($this->soc_ident->id));
+            if ($user === null) {
+                $username = $this->soc_ident->service->attributes["name"];
+                $email = $this->soc_ident->service->attributes["email"];
+                $service_id = $this->soc_ident->id;
+
+                $new_user = $this->createUser($username, $email, $service_id); // Создаем нового Юзера
+
+//                if (isset($this->soc_ident->service->attributes["photo"])) {
+//                    $new_user->photo = $this->soc_ident->service->attributes["photo"];
+//                }
+
+                $this->user = $new_user;
+                $this->errorCode = self::ERROR_NONE; // ошыбок нет
+            } else {
+                $this->errorCode = self::ERROR_NONE;
+            }
+
+            $user->last_login_at = new CDbExpression('NOW()');
+            $user->save();
+
+            $this->_id = $user->id;
+            $this->setState('name', $user->username);
+            return !$this->errorCode;
+        } else {
+            return false;
+        }
+    }
 }

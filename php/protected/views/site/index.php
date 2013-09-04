@@ -1,20 +1,56 @@
 <?php
-/* @var $this SiteController */
+Yii::app()->clientScript->registerCssFile(Yii::app()->baseUrl.'/css/flipclock/flipclock.css');
 
-$this->pageTitle=Yii::app()->name;
+
+Yii::app()->clientScript->registerScriptFile('http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js', CClientScript::POS_BEGIN);
+
+Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl.'/js/flipclock/libs/prefixfree.min.js', CClientScript::POS_BEGIN);
+Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl.'/js/flipclock/flipclock.min.js', CClientScript::POS_BEGIN);
+
+Yii::app()->clientScript->registerScriptFile('https://rawgithub.com/timrwood/moment/2.1.0/min/moment.min.js', CClientScript::POS_BEGIN);
+Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl.'/js/pages/chat.js', CClientScript::POS_BEGIN);
+
 ?>
 
-<h1>Welcome to <i><?php echo CHtml::encode(Yii::app()->name); ?></i></h1>
+<style type="text/css">
+    div.input-append{
+        margin-top: 5px;
+    }
 
-<p>Congratulations! You have successfully created your Yii application.</p>
+    div#chat-messages div.column-pad{
+        height: 350px;
+        overflow: auto;
+    }
 
-<p>You may change the content of this page by modifying the following two files:</p>
-<ul>
-	<li>View file: <code><?php echo __FILE__; ?></code></li>
-	<li>Layout file: <code><?php echo $this->getLayoutFile('main'); ?></code></li>
-</ul>
+    div#chat-window{
+        margin-top: 50px;
+    }
 
-<p>For more details on how to further develop this application, please read
-the <a href="http://www.yiiframework.com/doc/">documentation</a>.
-Feel free to ask in the <a href="http://www.yiiframework.com/forum/">forum</a>,
-should you have any questions.</p>
+    span.time_ago{
+        color: #b1bcbd;
+        margin-right: 5px;
+    }
+</style>
+
+<?php if(User::isGuest()) : ?>
+    <?php echo $google_img_link; ?>
+<?php endif; ?>
+
+<?php if(!User::isGuest()) : ?>
+    <div class="span6 pull-left" id='chat-window'>
+        <div class='column-pad'>
+            <div id='chat-messages'>
+                <div class='column-pad'>
+                </div>
+            </div>
+            <div class='pagination-centered' id='chat-submission'>
+                <div class="input-append">
+                    <input class="span6" id="appendedInputButton" type="text">
+                    <button class="btn btn-primary" type="button" id="send_msg_btn"><i class="icon-comment icon-white"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="clearfix"></div>
+<?php endif; ?>
+
