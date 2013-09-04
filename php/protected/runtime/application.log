@@ -1,0 +1,1094 @@
+2013/09/02 22:43:00 [error] [exception.CException] exception 'CException' with message 'Alias "bootstrap.widgets.TbHeroUnit" is invalid. Make sure it points to an existing directory or file.' in C:\OpenServer\domains\itpm_site\php\framework\YiiBase.php:347
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\CWidgetFactory.php(146): YiiBase::import('bootstrap.widge...', true)
+#1 C:\OpenServer\domains\itpm_site\php\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(SiteController), 'bootstrap.widge...', Array)
+#2 C:\OpenServer\domains\itpm_site\php\framework\web\CBaseController.php(189): CBaseController->createWidget('bootstrap.widge...', Array)
+#3 C:\OpenServer\domains\itpm_site\php\themes\bootstrap\views\site\index.php(9): CBaseController->beginWidget('bootstrap.widge...', Array)
+#4 C:\OpenServer\domains\itpm_site\php\framework\web\CBaseController.php(126): require('C:\OpenServer\d...')
+#5 C:\OpenServer\domains\itpm_site\php\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\OpenServer\d...', NULL, true)
+#6 C:\OpenServer\domains\itpm_site\php\framework\web\CController.php(869): CBaseController->renderFile('C:\OpenServer\d...', NULL, true)
+#7 C:\OpenServer\domains\itpm_site\php\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#8 C:\OpenServer\domains\itpm_site\php\protected\controllers\SiteController.php(32): CController->render('index')
+#9 C:\OpenServer\domains\itpm_site\php\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#10 C:\OpenServer\domains\itpm_site\php\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 C:\OpenServer\domains\itpm_site\php\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#12 C:\OpenServer\domains\itpm_site\php\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(282): CController->run('')
+#14 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#15 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#16 C:\OpenServer\domains\itpm_site\php\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/
+---
+2013/09/02 23:18:13 [error] [exception.CException] exception 'CException' with message 'SiteController cannot find the requested view "site/index".' in C:\OpenServer\domains\itpm_site\php\framework\web\CController.php:878
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\CController.php(782): CController->renderPartial('site/index', NULL, true)
+#1 C:\OpenServer\domains\itpm_site\php\protected\controllers\SiteController.php(27): CController->render('site/index')
+#2 C:\OpenServer\domains\itpm_site\php\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#3 C:\OpenServer\domains\itpm_site\php\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\OpenServer\domains\itpm_site\php\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\OpenServer\domains\itpm_site\php\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(282): CController->run('')
+#7 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#8 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php
+---
+2013/09/03 01:15:14 [error] [exception.CException] exception 'CException' with message 'Alias "gii.GiiModule" is invalid. Make sure it points to an existing PHP file and the file is readable.' in C:\OpenServer\domains\itpm_site\php\framework\YiiBase.php:322
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\YiiBase.php(196): YiiBase::import('gii.GiiModule', true)
+#1 C:\OpenServer\domains\itpm_site\php\framework\base\CModule.php(282): YiiBase::createComponent('gii.GiiModule', 'gii', NULL, Array)
+#2 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(337): CModule->getModule('gii')
+#3 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(276): CWebApplication->createController('gii')
+#4 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('gii')
+#5 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#7 {main}
+REQUEST_URI=/index.php?r=gii
+---
+2013/09/03 01:20:54 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\OpenServer\domains\itpm_site\php\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\OpenServer\domains\itpm_site\php\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\OpenServer\domains\itpm_site\php\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\OpenServer\domains\itpm_site\php\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\OpenServer\domains\itpm_site\php\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\OpenServer\domains\itpm_site\php\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\OpenServer\domains\itpm_site\php\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('user/admin')
+#9 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php?r=user/admin
+HTTP_REFERER=http://itpm.local:81/index.php?r=user
+---
+2013/09/03 01:21:27 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`itpm`.`user`, CONSTRAINT `FK_user_user_oauth` FOREIGN KEY (`user_oauth_id`) REFERENCES `user_oauth` (`id`)). The SQL statement executed was: INSERT INTO `user` (`user_oauth_id`, `created_at`, `username`) VALUES (:yp0, :yp1, :yp2). Bound with :yp0=12, :yp1='1212121212121212', :yp2='dfdsfsdf'.
+in C:\OpenServer\domains\itpm_site\php\protected\controllers\UserController.php (72)
+in C:\OpenServer\domains\itpm_site\php\index.php (15)
+2013/09/03 01:21:28 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`itpm`.`user`, CONSTRAINT `FK_user_user_oauth` FOREIGN KEY (`user_oauth_id`) REFERENCES `user_oauth` (`id`)). The SQL statement executed was: INSERT INTO `user` (`user_oauth_id`, `created_at`, `username`) VALUES (:yp0, :yp1, :yp2). Bound with :yp0=12, :yp1='1212121212121212', :yp2='dfdsfsdf'' in C:\OpenServer\domains\itpm_site\php\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\db\ar\CActiveRecord.php(1077): CDbCommand->execute()
+#1 C:\OpenServer\domains\itpm_site\php\framework\db\ar\CActiveRecord.php(806): CActiveRecord->insert(NULL)
+#2 C:\OpenServer\domains\itpm_site\php\protected\controllers\UserController.php(72): CActiveRecord->save()
+#3 C:\OpenServer\domains\itpm_site\php\framework\web\actions\CInlineAction.php(49): UserController->actionCreate()
+#4 C:\OpenServer\domains\itpm_site\php\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\OpenServer\domains\itpm_site\php\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\OpenServer\domains\itpm_site\php\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\OpenServer\domains\itpm_site\php\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\OpenServer\domains\itpm_site\php\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\OpenServer\domains\itpm_site\php\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\OpenServer\domains\itpm_site\php\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\OpenServer\domains\itpm_site\php\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(282): CController->run('create')
+#13 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('user/create')
+#14 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#16 {main}
+REQUEST_URI=/index.php?r=user/create
+HTTP_REFERER=http://itpm.local:81/index.php?r=user/create
+---
+2013/09/03 01:21:53 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`itpm`.`user`, CONSTRAINT `FK_user_user_oauth` FOREIGN KEY (`user_oauth_id`) REFERENCES `user_oauth` (`id`)). The SQL statement executed was: INSERT INTO `user` (`user_oauth_id`, `created_at`, `username`) VALUES (:yp0, :yp1, :yp2). Bound with :yp0=12, :yp1='1212121212121212', :yp2='dfdsfsdf'.
+in C:\OpenServer\domains\itpm_site\php\protected\controllers\UserController.php (72)
+in C:\OpenServer\domains\itpm_site\php\index.php (15)
+2013/09/03 01:21:54 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`itpm`.`user`, CONSTRAINT `FK_user_user_oauth` FOREIGN KEY (`user_oauth_id`) REFERENCES `user_oauth` (`id`)). The SQL statement executed was: INSERT INTO `user` (`user_oauth_id`, `created_at`, `username`) VALUES (:yp0, :yp1, :yp2). Bound with :yp0=12, :yp1='1212121212121212', :yp2='dfdsfsdf'' in C:\OpenServer\domains\itpm_site\php\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\db\ar\CActiveRecord.php(1077): CDbCommand->execute()
+#1 C:\OpenServer\domains\itpm_site\php\framework\db\ar\CActiveRecord.php(806): CActiveRecord->insert(NULL)
+#2 C:\OpenServer\domains\itpm_site\php\protected\controllers\UserController.php(72): CActiveRecord->save()
+#3 C:\OpenServer\domains\itpm_site\php\framework\web\actions\CInlineAction.php(49): UserController->actionCreate()
+#4 C:\OpenServer\domains\itpm_site\php\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\OpenServer\domains\itpm_site\php\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\OpenServer\domains\itpm_site\php\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\OpenServer\domains\itpm_site\php\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\OpenServer\domains\itpm_site\php\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\OpenServer\domains\itpm_site\php\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\OpenServer\domains\itpm_site\php\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\OpenServer\domains\itpm_site\php\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(282): CController->run('create')
+#13 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('user/create')
+#14 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#16 {main}
+REQUEST_URI=/index.php?r=user/create
+HTTP_REFERER=http://itpm.local:81/index.php?r=user/create
+---
+2013/09/03 01:23:55 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\OpenServer\domains\itpm_site\php\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\OpenServer\domains\itpm_site\php\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\OpenServer\domains\itpm_site\php\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\OpenServer\domains\itpm_site\php\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\OpenServer\domains\itpm_site\php\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\OpenServer\domains\itpm_site\php\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\OpenServer\domains\itpm_site\php\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('user/admin')
+#9 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php?r=user/admin
+HTTP_REFERER=http://itpm.local:81/index.php?r=user/view&id=3
+---
+2013/09/03 01:46:47 [error] [exception.CException] exception 'CException' with message 'Property "CWebApplication.loid" is not defined.' in C:\OpenServer\domains\itpm_site\php\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\base\CModule.php(105): CComponent->__get('loid')
+#1 C:\OpenServer\domains\itpm_site\php\protected\extensions\eauth\EOpenIDService.php(43): CModule->__get('loid')
+#2 C:\OpenServer\domains\itpm_site\php\protected\extensions\eauth\EAuth.php(113): EOpenIDService->init(Object(EAuth), Array)
+#3 C:\OpenServer\domains\itpm_site\php\protected\controllers\SiteController.php(59): EAuth->getIdentity('google')
+#4 C:\OpenServer\domains\itpm_site\php\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#5 C:\OpenServer\domains\itpm_site\php\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 C:\OpenServer\domains\itpm_site\php\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#7 C:\OpenServer\domains\itpm_site\php\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(282): CController->run('login')
+#9 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login/serv...')
+#10 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php?r=site/login/service/google
+---
+2013/09/03 01:56:17 [error] [exception.EAuthException] exception 'EAuthException' with message 'Unable to complete the authentication because the required data was not received.' in C:\OpenServer\domains\itpm_site\php\protected\extensions\eauth\EOpenIDService.php:79
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\protected\controllers\SiteController.php(62): EOpenIDService->authenticate()
+#1 C:\OpenServer\domains\itpm_site\php\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#2 C:\OpenServer\domains\itpm_site\php\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#3 C:\OpenServer\domains\itpm_site\php\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#4 C:\OpenServer\domains\itpm_site\php\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(282): CController->run('login')
+#6 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login/serv...')
+#7 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#8 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#9 {main}
+REQUEST_URI=/index.php?r=site/login/service/google&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&openid.mode=id_res&openid.op_endpoint=https%3A%2F%2Fwww.google.com%2Faccounts%2Fo8%2Fud&openid.response_nonce=2013-09-02T21%3A54%3A53Z6-oWtD-IUyIOhA&openid.return_to=http%3A%2F%2Fitpm.local%3A81%2Findex.php%3Fr%3Dsite%2Flogin%2Fservice%2Fgoogle&openid.assoc_handle=1.AMlYA9UWirnJBr39fzlfF_UlcecyTttRobFYgAwGr3xLJL2WaDNNxWSKENZ3h4Km&openid.signed=op_endpoint%2Cclaimed_id%2Cidentity%2Creturn_to%2Cresponse_nonce%2Cassoc_handle%2Cns.ext1%2Cext1.mode%2Cext1.type.firstname%2Cext1.value.firstname%2Cext1.type.lastname%2Cext1.value.lastname%2Cext1.type.email%2Cext1.value.email&openid.sig=HmiyeFzXHtqOGEWeoRYw727%2FplU%3D&openid.identity=https%3A%2F%2Fwww.google.com%2Faccounts%2Fo8%2Fid%3Fid%3DAItOawmI6LVQ0R999HH32DB2o5Q-zUPzTTBacPo&openid.claimed_id=https%3A%2F%2Fwww.google.com%2Faccounts%2Fo8%2Fid%3Fid%3DAItOawmI6LVQ0R999HH32DB2o5Q-zUPzTTBacPo&openid.ns.ext1=http%3A%2F%2Fopenid.net%2Fsrv%2Fax%2F1.0&openid.ext1.mode=fetch_response&openid.ext1.type.firstname=http%3A%2F%2Faxschema.org%2FnamePerson%2Ffirst&openid.ext1.value.firstname=Danylo&openid.ext1.type.lastname=http%3A%2F%2Faxschema.org%2FnamePerson%2Flast&openid.ext1.value.lastname=Vivchar&openid.ext1.type.email=http%3A%2F%2Faxschema.org%2Fcontact%2Femail&openid.ext1.value.email=vivchar.danylo%40gmail.com
+---
+2013/09/03 01:56:48 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'service_id' in 'where clause'. The SQL statement executed was: SELECT * FROM `user` `t` WHERE service_id=? LIMIT 1. Bound with 0='https://www.google.com/accounts/o8/id?id=AItOawmI6LVQ0R999HH32DB2o5Q-zUPzTTBacPo'.
+in C:\OpenServer\domains\itpm_site\php\protected\components\UserIdentity.php (45)
+in C:\OpenServer\domains\itpm_site\php\protected\controllers\SiteController.php (66)
+in C:\OpenServer\domains\itpm_site\php\index.php (15)
+2013/09/03 01:56:54 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'service_id' in 'where clause'. The SQL statement executed was: SELECT * FROM `user` `t` WHERE service_id=? LIMIT 1. Bound with 0='https://www.google.com/accounts/o8/id?id=AItOawmI6LVQ0R999HH32DB2o5Q-zUPzTTBacPo'' in C:\OpenServer\domains\itpm_site\php\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\db\CDbCommand.php(415): CDbCommand->queryInternal('fetch', Array, Array)
+#1 C:\OpenServer\domains\itpm_site\php\framework\db\ar\CActiveRecord.php(1351): CDbCommand->queryRow()
+#2 C:\OpenServer\domains\itpm_site\php\framework\db\ar\CActiveRecord.php(1456): CActiveRecord->query(Object(CDbCriteria))
+#3 C:\OpenServer\domains\itpm_site\php\protected\components\UserIdentity.php(45): CActiveRecord->find('service_id=?', Array)
+#4 C:\OpenServer\domains\itpm_site\php\protected\controllers\SiteController.php(66): UserIdentity->authenticate()
+#5 C:\OpenServer\domains\itpm_site\php\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#6 C:\OpenServer\domains\itpm_site\php\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 C:\OpenServer\domains\itpm_site\php\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 C:\OpenServer\domains\itpm_site\php\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(282): CController->run('login')
+#10 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login/serv...')
+#11 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#12 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#13 {main}
+REQUEST_URI=/index.php?r=site/login/service/google&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&openid.mode=id_res&openid.op_endpoint=https%3A%2F%2Fwww.google.com%2Faccounts%2Fo8%2Fud&openid.response_nonce=2013-09-02T21%3A56%3A43Z0_HxahZm6Aoo2A&openid.return_to=http%3A%2F%2Fitpm.local%3A81%2Findex.php%3Fr%3Dsite%2Flogin%2Fservice%2Fgoogle&openid.assoc_handle=1.AMlYA9VWqUgnHGR-NSSuZjMo7HQQxwCYfzrd7nFq5N8wOZ1LyTa_-w1Uke0Xh9wI&openid.signed=op_endpoint%2Cclaimed_id%2Cidentity%2Creturn_to%2Cresponse_nonce%2Cassoc_handle%2Cns.ext1%2Cext1.mode%2Cext1.type.firstname%2Cext1.value.firstname%2Cext1.type.lastname%2Cext1.value.lastname%2Cext1.type.email%2Cext1.value.email&openid.sig=x%2BuQ5%2FpH6VUbb2PymYe7NP9KrNM%3D&openid.identity=https%3A%2F%2Fwww.google.com%2Faccounts%2Fo8%2Fid%3Fid%3DAItOawmI6LVQ0R999HH32DB2o5Q-zUPzTTBacPo&openid.claimed_id=https%3A%2F%2Fwww.google.com%2Faccounts%2Fo8%2Fid%3Fid%3DAItOawmI6LVQ0R999HH32DB2o5Q-zUPzTTBacPo&openid.ns.ext1=http%3A%2F%2Fopenid.net%2Fsrv%2Fax%2F1.0&openid.ext1.mode=fetch_response&openid.ext1.type.firstname=http%3A%2F%2Faxschema.org%2FnamePerson%2Ffirst&openid.ext1.value.firstname=Danylo&openid.ext1.type.lastname=http%3A%2F%2Faxschema.org%2FnamePerson%2Flast&openid.ext1.value.lastname=Vivchar&openid.ext1.type.email=http%3A%2F%2Faxschema.org%2Fcontact%2Femail&openid.ext1.value.email=vivchar.danylo%40gmail.com
+---
+2013/09/03 01:58:54 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Ошибка создания нового юзера.' in C:\OpenServer\domains\itpm_site\php\protected\components\UserIdentity.php:35
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\protected\components\UserIdentity.php(51): UserIdentity->createUser('Danylo Vivchar', 'vivchar.danylo@...', 'https://www.goo...')
+#1 C:\OpenServer\domains\itpm_site\php\protected\controllers\SiteController.php(66): UserIdentity->authenticate()
+#2 C:\OpenServer\domains\itpm_site\php\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#3 C:\OpenServer\domains\itpm_site\php\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\OpenServer\domains\itpm_site\php\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\OpenServer\domains\itpm_site\php\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(282): CController->run('login')
+#7 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login/serv...')
+#8 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#10 {main}
+REQUEST_URI=/?r=site/login/service/google&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&openid.mode=id_res&openid.op_endpoint=https%3A%2F%2Fwww.google.com%2Faccounts%2Fo8%2Fud&openid.response_nonce=2013-09-02T21%3A58%3A31ZTXE1TZWkU1oT6w&openid.return_to=http%3A%2F%2Fitpm.local%3A81%2F%3Fr%3Dsite%2Flogin%2Fservice%2Fgoogle&openid.assoc_handle=1.AMlYA9U1niEg9omupk45zOZkgMVVoTYbr1Dc5hIpHedSS3uDUXJQ35DTKo00XKOl&openid.signed=op_endpoint%2Cclaimed_id%2Cidentity%2Creturn_to%2Cresponse_nonce%2Cassoc_handle%2Cns.ext1%2Cext1.mode%2Cext1.type.firstname%2Cext1.value.firstname%2Cext1.type.lastname%2Cext1.value.lastname%2Cext1.type.email%2Cext1.value.email&openid.sig=QgSucM63JDUDH6V8DL7hqWhd7UA%3D&openid.identity=https%3A%2F%2Fwww.google.com%2Faccounts%2Fo8%2Fid%3Fid%3DAItOawmI6LVQ0R999HH32DB2o5Q-zUPzTTBacPo&openid.claimed_id=https%3A%2F%2Fwww.google.com%2Faccounts%2Fo8%2Fid%3Fid%3DAItOawmI6LVQ0R999HH32DB2o5Q-zUPzTTBacPo&openid.ns.ext1=http%3A%2F%2Fopenid.net%2Fsrv%2Fax%2F1.0&openid.ext1.mode=fetch_response&openid.ext1.type.firstname=http%3A%2F%2Faxschema.org%2FnamePerson%2Ffirst&openid.ext1.value.firstname=Danylo&openid.ext1.type.lastname=http%3A%2F%2Faxschema.org%2FnamePerson%2Flast&openid.ext1.value.lastname=Vivchar&openid.ext1.type.email=http%3A%2F%2Faxschema.org%2Fcontact%2Femail&openid.ext1.value.email=vivchar.danylo%40gmail.com
+---
+2013/09/03 02:00:06 [error] [exception.CException] exception 'CException' with message 'User has an invalid validation rule. The rule must specify attributes to be validated and the validator name.' in C:\OpenServer\domains\itpm_site\php\framework\base\CModel.php:289
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\base\CModel.php(260): CModel->createValidators()
+#1 C:\OpenServer\domains\itpm_site\php\framework\base\CModel.php(158): CModel->getValidators()
+#2 C:\OpenServer\domains\itpm_site\php\framework\db\ar\CActiveRecord.php(805): CModel->validate(NULL)
+#3 C:\OpenServer\domains\itpm_site\php\protected\components\UserIdentity.php(34): CActiveRecord->save()
+#4 C:\OpenServer\domains\itpm_site\php\protected\components\UserIdentity.php(51): UserIdentity->createUser('Danylo Vivchar', 'vivchar.danylo@...', 'https://www.goo...')
+#5 C:\OpenServer\domains\itpm_site\php\protected\controllers\SiteController.php(66): UserIdentity->authenticate()
+#6 C:\OpenServer\domains\itpm_site\php\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#7 C:\OpenServer\domains\itpm_site\php\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\OpenServer\domains\itpm_site\php\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 C:\OpenServer\domains\itpm_site\php\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(282): CController->run('login')
+#11 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login/serv...')
+#12 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#14 {main}
+REQUEST_URI=/?r=site/login/service/google&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&openid.mode=id_res&openid.op_endpoint=https%3A%2F%2Fwww.google.com%2Faccounts%2Fo8%2Fud&openid.response_nonce=2013-09-02T21%3A59%3A56ZrXwZB70OmmFJrw&openid.return_to=http%3A%2F%2Fitpm.local%3A81%2F%3Fr%3Dsite%2Flogin%2Fservice%2Fgoogle&openid.assoc_handle=1.AMlYA9Whh7Nc5Zm0lW8INTvZOC36ryhrQHwDBDblxZxx4GpOWlcSbwBx4myAJrcq&openid.signed=op_endpoint%2Cclaimed_id%2Cidentity%2Creturn_to%2Cresponse_nonce%2Cassoc_handle%2Cns.ext1%2Cext1.mode%2Cext1.type.firstname%2Cext1.value.firstname%2Cext1.type.lastname%2Cext1.value.lastname%2Cext1.type.email%2Cext1.value.email&openid.sig=HvJOzFO%2BSbWaRrsyLyH0SpBdf1E%3D&openid.identity=https%3A%2F%2Fwww.google.com%2Faccounts%2Fo8%2Fid%3Fid%3DAItOawmI6LVQ0R999HH32DB2o5Q-zUPzTTBacPo&openid.claimed_id=https%3A%2F%2Fwww.google.com%2Faccounts%2Fo8%2Fid%3Fid%3DAItOawmI6LVQ0R999HH32DB2o5Q-zUPzTTBacPo&openid.ns.ext1=http%3A%2F%2Fopenid.net%2Fsrv%2Fax%2F1.0&openid.ext1.mode=fetch_response&openid.ext1.type.firstname=http%3A%2F%2Faxschema.org%2FnamePerson%2Ffirst&openid.ext1.value.firstname=Danylo&openid.ext1.type.lastname=http%3A%2F%2Faxschema.org%2FnamePerson%2Flast&openid.ext1.value.lastname=Vivchar&openid.ext1.type.email=http%3A%2F%2Faxschema.org%2Fcontact%2Femail&openid.ext1.value.email=vivchar.danylo%40gmail.com
+---
+2013/09/03 02:01:03 [error] [exception.CException] exception 'CException' with message 'Property "UserIdentity.email" is not defined.' in C:\OpenServer\domains\itpm_site\php\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\protected\components\UserIdentity.php(58): CComponent->__set('email', 'vivchar.danylo@...')
+#1 C:\OpenServer\domains\itpm_site\php\protected\controllers\SiteController.php(66): UserIdentity->authenticate()
+#2 C:\OpenServer\domains\itpm_site\php\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#3 C:\OpenServer\domains\itpm_site\php\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\OpenServer\domains\itpm_site\php\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\OpenServer\domains\itpm_site\php\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(282): CController->run('login')
+#7 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login/serv...')
+#8 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#10 {main}
+REQUEST_URI=/?r=site/login/service/google&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&openid.mode=id_res&openid.op_endpoint=https%3A%2F%2Fwww.google.com%2Faccounts%2Fo8%2Fud&openid.response_nonce=2013-09-02T22%3A00%3A40Z2Td74lgAH6C0FA&openid.return_to=http%3A%2F%2Fitpm.local%3A81%2F%3Fr%3Dsite%2Flogin%2Fservice%2Fgoogle&openid.assoc_handle=1.AMlYA9VYk_2H389ctrKDcym5v3UszB-nQGksIiIT3Q0lDNroq_0bPnGahFqR0dFQ&openid.signed=op_endpoint%2Cclaimed_id%2Cidentity%2Creturn_to%2Cresponse_nonce%2Cassoc_handle%2Cns.ext1%2Cext1.mode%2Cext1.type.firstname%2Cext1.value.firstname%2Cext1.type.lastname%2Cext1.value.lastname%2Cext1.type.email%2Cext1.value.email&openid.sig=puX191nbUTh16npGnV39OAFBzr4%3D&openid.identity=https%3A%2F%2Fwww.google.com%2Faccounts%2Fo8%2Fid%3Fid%3DAItOawmI6LVQ0R999HH32DB2o5Q-zUPzTTBacPo&openid.claimed_id=https%3A%2F%2Fwww.google.com%2Faccounts%2Fo8%2Fid%3Fid%3DAItOawmI6LVQ0R999HH32DB2o5Q-zUPzTTBacPo&openid.ns.ext1=http%3A%2F%2Fopenid.net%2Fsrv%2Fax%2F1.0&openid.ext1.mode=fetch_response&openid.ext1.type.firstname=http%3A%2F%2Faxschema.org%2FnamePerson%2Ffirst&openid.ext1.value.firstname=Danylo&openid.ext1.type.lastname=http%3A%2F%2Faxschema.org%2FnamePerson%2Flast&openid.ext1.value.lastname=Vivchar&openid.ext1.type.email=http%3A%2F%2Faxschema.org%2Fcontact%2Femail&openid.ext1.value.email=vivchar.danylo%40gmail.com
+---
+2013/09/03 02:06:02 [error] [exception.EAuthException] exception 'EAuthException' with message 'Unable to complete the authentication because the required data was not received.' in C:\OpenServer\domains\itpm_site\php\protected\extensions\eauth\EOpenIDService.php:79
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\protected\controllers\SiteController.php(62): EOpenIDService->authenticate()
+#1 C:\OpenServer\domains\itpm_site\php\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#2 C:\OpenServer\domains\itpm_site\php\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#3 C:\OpenServer\domains\itpm_site\php\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#4 C:\OpenServer\domains\itpm_site\php\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(282): CController->run('login')
+#6 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login/serv...')
+#7 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#8 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#9 {main}
+REQUEST_URI=/index.php?r=site/login/service/google&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&openid.mode=id_res&openid.op_endpoint=https%3A%2F%2Fwww.google.com%2Faccounts%2Fo8%2Fud&openid.response_nonce=2013-09-02T22%3A05%3A11ZE40fkFEEIcqn9g&openid.return_to=http%3A%2F%2Fitpm.local%3A81%2Findex.php%3Fr%3Dsite%2Flogin%2Fservice%2Fgoogle&openid.assoc_handle=1.AMlYA9Uat0Wqbi0bumzceX_m7QuUfZBQ_WnSLndUhp2bGHXwwhmw0dONkucMwlsw&openid.signed=op_endpoint%2Cclaimed_id%2Cidentity%2Creturn_to%2Cresponse_nonce%2Cassoc_handle%2Cns.ext1%2Cext1.mode%2Cext1.type.firstname%2Cext1.value.firstname%2Cext1.type.lastname%2Cext1.value.lastname%2Cext1.type.email%2Cext1.value.email&openid.sig=Zj1xlIAnylaQKK9hepG5nb5GqhQ%3D&openid.identity=https%3A%2F%2Fwww.google.com%2Faccounts%2Fo8%2Fid%3Fid%3DAItOawmI6LVQ0R999HH32DB2o5Q-zUPzTTBacPo&openid.claimed_id=https%3A%2F%2Fwww.google.com%2Faccounts%2Fo8%2Fid%3Fid%3DAItOawmI6LVQ0R999HH32DB2o5Q-zUPzTTBacPo&openid.ns.ext1=http%3A%2F%2Fopenid.net%2Fsrv%2Fax%2F1.0&openid.ext1.mode=fetch_response&openid.ext1.type.firstname=http%3A%2F%2Faxschema.org%2FnamePerson%2Ffirst&openid.ext1.value.firstname=Danylo&openid.ext1.type.lastname=http%3A%2F%2Faxschema.org%2FnamePerson%2Flast&openid.ext1.value.lastname=Vivchar&openid.ext1.type.email=http%3A%2F%2Faxschema.org%2Fcontact%2Femail&openid.ext1.value.email=vivchar.danylo%40gmail.com
+---
+2013/09/03 23:28:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\OpenServer\domains\itpm_site\php\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/goo...')
+#3 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/images/google-login.png
+HTTP_REFERER=http://itpm.local:81/site/index?service=google
+---
+2013/09/03 23:28:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\OpenServer\domains\itpm_site\php\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/goo...')
+#3 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/images/google-login.png
+HTTP_REFERER=http://itpm.local:81/site/index?service=google
+---
+2013/09/03 23:28:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "contact".' in C:\OpenServer\domains\itpm_site\php\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\CController.php(270): CController->missingAction('contact')
+#1 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(282): CController->run('contact')
+#2 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('site/contact')
+#3 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/contact
+HTTP_REFERER=http://itpm.local:81/site/page?view=about
+---
+2013/09/03 23:29:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\OpenServer\domains\itpm_site\php\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/goo...')
+#3 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/images/google-login.png
+HTTP_REFERER=http://itpm.local:81/site/index?service=google
+---
+2013/09/03 23:29:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\OpenServer\domains\itpm_site\php\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/goo...')
+#3 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/images/google-login.png
+HTTP_REFERER=http://itpm.local:81/site/index?service=google
+---
+2013/09/04 00:04:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\OpenServer\domains\itpm_site\php\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/goo...')
+#3 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/images/google-login.png
+HTTP_REFERER=http://itpm.local:81/site/index?service=google
+---
+2013/09/04 00:06:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\OpenServer\domains\itpm_site\php\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/goo...')
+#3 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/images/google-login.png
+HTTP_REFERER=http://itpm.local:81/site/index?service=google
+---
+2013/09/04 00:07:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\OpenServer\domains\itpm_site\php\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/goo...')
+#3 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/images/google-login.png
+HTTP_REFERER=http://itpm.local:81/site/index?service=google
+---
+2013/09/04 00:07:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\OpenServer\domains\itpm_site\php\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/goo...')
+#3 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/images/google-login.png
+HTTP_REFERER=http://itpm.local:81/site/index?service=google
+---
+2013/09/04 00:08:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\OpenServer\domains\itpm_site\php\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/goo...')
+#3 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/images/google-login.png
+HTTP_REFERER=http://itpm.local:81/site/index?service=google
+---
+2013/09/04 00:08:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\OpenServer\domains\itpm_site\php\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/goo...')
+#3 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/images/google-login.png
+HTTP_REFERER=http://itpm.local:81/site/index
+---
+2013/09/04 00:08:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\OpenServer\domains\itpm_site\php\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/goo...')
+#3 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/images/google-login.png
+HTTP_REFERER=http://itpm.local:81/site/index?service=google
+---
+2013/09/04 00:08:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\OpenServer\domains\itpm_site\php\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/goo...')
+#3 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/images/google-login.png
+HTTP_REFERER=http://itpm.local:81/site/index
+---
+2013/09/04 00:09:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\OpenServer\domains\itpm_site\php\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/goo...')
+#3 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/images/google-login.png
+HTTP_REFERER=http://itpm.local:81/site/index?service=google
+---
+2013/09/04 00:12:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\OpenServer\domains\itpm_site\php\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/goo...')
+#3 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/images/google-login.png
+HTTP_REFERER=http://itpm.local:81/site/index
+---
+2013/09/04 00:12:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\OpenServer\domains\itpm_site\php\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/goo...')
+#3 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/images/google-login.png
+HTTP_REFERER=http://itpm.local:81/site/index
+---
+2013/09/04 00:17:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\OpenServer\domains\itpm_site\php\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/goo...')
+#3 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/images/google-login.png
+HTTP_REFERER=http://itpm.local:81/site/index
+---
+2013/09/04 00:19:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\OpenServer\domains\itpm_site\php\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/goo...')
+#3 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/images/google-login.png
+HTTP_REFERER=http://itpm.local:81/site/index
+---
+2013/09/04 00:20:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\OpenServer\domains\itpm_site\php\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/goo...')
+#3 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/images/google-login.png
+HTTP_REFERER=http://itpm.local:81/site/index
+---
+2013/09/04 00:36:24 [error] [exception.CException] exception 'CException' with message 'CClientScript and its behaviors do not have a method or closure named "regis".' in C:\OpenServer\domains\itpm_site\php\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\protected\views\site\index.php(3): CComponent->__call('regis', Array)
+#1 C:\OpenServer\domains\itpm_site\php\protected\views\site\index.php(3): CClientScript->regis('/css/flipclock....')
+#2 C:\OpenServer\domains\itpm_site\php\framework\web\CBaseController.php(126): require('C:\OpenServer\d...')
+#3 C:\OpenServer\domains\itpm_site\php\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\OpenServer\d...', NULL, true)
+#4 C:\OpenServer\domains\itpm_site\php\framework\web\CController.php(869): CBaseController->renderFile('C:\OpenServer\d...', NULL, true)
+#5 C:\OpenServer\domains\itpm_site\php\framework\web\CController.php(782): CController->renderPartial('/site/index', NULL, true)
+#6 C:\OpenServer\domains\itpm_site\php\protected\controllers\SiteController.php(34): CController->render('/site/index')
+#7 C:\OpenServer\domains\itpm_site\php\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#8 C:\OpenServer\domains\itpm_site\php\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\OpenServer\domains\itpm_site\php\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\OpenServer\domains\itpm_site\php\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(282): CController->run('')
+#12 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#13 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#15 {main}
+REQUEST_URI=/
+HTTP_REFERER=http://itpm.local:81/site/index
+---
+2013/09/04 00:36:54 [error] [exception.CException] exception 'CException' with message 'CClientScript and its behaviors do not have a method or closure named "regis".' in C:\OpenServer\domains\itpm_site\php\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\protected\views\site\index.php(3): CComponent->__call('regis', Array)
+#1 C:\OpenServer\domains\itpm_site\php\protected\views\site\index.php(3): CClientScript->regis('/css/flipclock....')
+#2 C:\OpenServer\domains\itpm_site\php\framework\web\CBaseController.php(126): require('C:\OpenServer\d...')
+#3 C:\OpenServer\domains\itpm_site\php\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\OpenServer\d...', NULL, true)
+#4 C:\OpenServer\domains\itpm_site\php\framework\web\CController.php(869): CBaseController->renderFile('C:\OpenServer\d...', NULL, true)
+#5 C:\OpenServer\domains\itpm_site\php\framework\web\CController.php(782): CController->renderPartial('/site/index', NULL, true)
+#6 C:\OpenServer\domains\itpm_site\php\protected\controllers\SiteController.php(34): CController->render('/site/index')
+#7 C:\OpenServer\domains\itpm_site\php\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#8 C:\OpenServer\domains\itpm_site\php\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\OpenServer\domains\itpm_site\php\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\OpenServer\domains\itpm_site\php\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(282): CController->run('')
+#12 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#13 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#15 {main}
+REQUEST_URI=/
+HTTP_REFERER=http://itpm.local:81/site/index
+---
+2013/09/04 00:41:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/09/04 00:42:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/flipclock.css".' in C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('css/flipclock.c...')
+#1 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/flipclock.css
+HTTP_REFERER=http://itpm.local:81/
+---
+2013/09/04 00:42:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/flipclock.css".' in C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('css/flipclock.c...')
+#1 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/flipclock.css
+HTTP_REFERER=http://itpm.local:81/
+---
+2013/09/04 00:42:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/flipclock.css".' in C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('css/flipclock.c...')
+#1 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/flipclock.css
+HTTP_REFERER=http://itpm.local:81/
+---
+2013/09/04 00:42:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/flipclock.css".' in C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('css/flipclock.c...')
+#1 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/flipclock.css
+HTTP_REFERER=http://itpm.local:81/
+---
+2013/09/04 00:42:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/09/04 00:42:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/flipclock.css".' in C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('css/flipclock.c...')
+#1 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/flipclock.css
+HTTP_REFERER=http://itpm.local:81/
+---
+2013/09/04 00:42:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/flipclock.css".' in C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('css/flipclock.c...')
+#1 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/flipclock.css
+HTTP_REFERER=http://itpm.local:81/
+---
+2013/09/04 00:42:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/flipclock.css".' in C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('css/flipclock.c...')
+#1 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/flipclock.css
+HTTP_REFERER=http://itpm.local:81/
+---
+2013/09/04 00:42:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/flipclock.css".' in C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('css/flipclock.c...')
+#1 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/flipclock.css
+HTTP_REFERER=http://itpm.local:81/
+---
+2013/09/04 00:42:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/09/04 00:42:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/flipclock.css".' in C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('css/flipclock.c...')
+#1 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/flipclock.css
+HTTP_REFERER=http://itpm.local:81/
+---
+2013/09/04 00:42:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/flipclock.css".' in C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('css/flipclock.c...')
+#1 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/flipclock.css
+HTTP_REFERER=http://itpm.local:81/
+---
+2013/09/04 00:42:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/09/04 00:43:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/09/04 00:44:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/09/04 00:48:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/09/04 00:49:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/09/04 00:49:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/09/04 00:58:56 [error] [exception.CException] exception 'CException' with message 'Property "User.last_login_time" is not defined.' in C:\OpenServer\domains\itpm_site\php\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\db\ar\CActiveRecord.php(161): CComponent->__set('last_login_time', 1378241936)
+#1 C:\OpenServer\domains\itpm_site\php\protected\components\UserIdentity.php(65): CActiveRecord->__set('last_login_time', 1378241936)
+#2 C:\OpenServer\domains\itpm_site\php\protected\controllers\SiteController.php(69): UserIdentity->authenticate()
+#3 C:\OpenServer\domains\itpm_site\php\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#4 C:\OpenServer\domains\itpm_site\php\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\OpenServer\domains\itpm_site\php\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 C:\OpenServer\domains\itpm_site\php\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(282): CController->run('login')
+#8 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#9 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#11 {main}
+REQUEST_URI=/site/login?service=google&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&openid.mode=id_res&openid.op_endpoint=https%3A%2F%2Fwww.google.com%2Faccounts%2Fo8%2Fud&openid.response_nonce=2013-09-03T20%3A59%3A02ZIaETOONktQdqmA&openid.return_to=http%3A%2F%2Fitpm.local%3A81%2Fsite%2Flogin%3Fservice%3Dgoogle&openid.assoc_handle=1.AMlYA9WxPMugdYyLdc08CkZjnIcZyw3MNsgbWdB7NecL5gUID1Teqr9kD3saGg3w&openid.signed=op_endpoint%2Cclaimed_id%2Cidentity%2Creturn_to%2Cresponse_nonce%2Cassoc_handle%2Cns.ext1%2Cext1.mode%2Cext1.type.firstname%2Cext1.value.firstname%2Cext1.type.lastname%2Cext1.value.lastname%2Cext1.type.email%2Cext1.value.email&openid.sig=kK%2BtYbPCuwIaL2iOrGRUe%2B4qHEM%3D&openid.identity=https%3A%2F%2Fwww.google.com%2Faccounts%2Fo8%2Fid%3Fid%3DAItOawmI6LVQ0R999HH32DB2o5Q-zUPzTTBacPo&openid.claimed_id=https%3A%2F%2Fwww.google.com%2Faccounts%2Fo8%2Fid%3Fid%3DAItOawmI6LVQ0R999HH32DB2o5Q-zUPzTTBacPo&openid.ns.ext1=http%3A%2F%2Fopenid.net%2Fsrv%2Fax%2F1.0&openid.ext1.mode=fetch_response&openid.ext1.type.firstname=http%3A%2F%2Faxschema.org%2FnamePerson%2Ffirst&openid.ext1.value.firstname=Danylo&openid.ext1.type.lastname=http%3A%2F%2Faxschema.org%2FnamePerson%2Flast&openid.ext1.value.lastname=Vivchar&openid.ext1.type.email=http%3A%2F%2Faxschema.org%2Fcontact%2Femail&openid.ext1.value.email=vivchar.danylo%40gmail.com
+---
+2013/09/04 00:59:17 [error] [exception.CException] exception 'CException' with message 'Property "User.last_logined_at" is not defined.' in C:\OpenServer\domains\itpm_site\php\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\db\ar\CActiveRecord.php(161): CComponent->__set('last_logined_at', 1378241957)
+#1 C:\OpenServer\domains\itpm_site\php\protected\components\UserIdentity.php(65): CActiveRecord->__set('last_logined_at', 1378241957)
+#2 C:\OpenServer\domains\itpm_site\php\protected\controllers\SiteController.php(69): UserIdentity->authenticate()
+#3 C:\OpenServer\domains\itpm_site\php\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#4 C:\OpenServer\domains\itpm_site\php\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\OpenServer\domains\itpm_site\php\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 C:\OpenServer\domains\itpm_site\php\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(282): CController->run('login')
+#8 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#9 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#11 {main}
+REQUEST_URI=/site/login?service=google&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&openid.mode=id_res&openid.op_endpoint=https%3A%2F%2Fwww.google.com%2Faccounts%2Fo8%2Fud&openid.response_nonce=2013-09-03T20%3A59%3A23ZZSlTy4U9pOBTGQ&openid.return_to=http%3A%2F%2Fitpm.local%3A81%2Fsite%2Flogin%3Fservice%3Dgoogle&openid.assoc_handle=1.AMlYA9W39xv4Nl0lhwI8Wm5Mg_iueeGJaPppuJxKqKpdTWuvj8xG1gI_BtCsNXJf&openid.signed=op_endpoint%2Cclaimed_id%2Cidentity%2Creturn_to%2Cresponse_nonce%2Cassoc_handle%2Cns.ext1%2Cext1.mode%2Cext1.type.firstname%2Cext1.value.firstname%2Cext1.type.lastname%2Cext1.value.lastname%2Cext1.type.email%2Cext1.value.email&openid.sig=PVSCR1IEdLkXAaQnqdaxlfRT198%3D&openid.identity=https%3A%2F%2Fwww.google.com%2Faccounts%2Fo8%2Fid%3Fid%3DAItOawmI6LVQ0R999HH32DB2o5Q-zUPzTTBacPo&openid.claimed_id=https%3A%2F%2Fwww.google.com%2Faccounts%2Fo8%2Fid%3Fid%3DAItOawmI6LVQ0R999HH32DB2o5Q-zUPzTTBacPo&openid.ns.ext1=http%3A%2F%2Fopenid.net%2Fsrv%2Fax%2F1.0&openid.ext1.mode=fetch_response&openid.ext1.type.firstname=http%3A%2F%2Faxschema.org%2FnamePerson%2Ffirst&openid.ext1.value.firstname=Danylo&openid.ext1.type.lastname=http%3A%2F%2Faxschema.org%2FnamePerson%2Flast&openid.ext1.value.lastname=Vivchar&openid.ext1.type.email=http%3A%2F%2Faxschema.org%2Fcontact%2Femail&openid.ext1.value.email=vivchar.danylo%40gmail.com
+---
+2013/09/04 21:44:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/09/04 21:45:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/09/04 21:46:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/09/04 21:49:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/09/04 22:04:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/09/04 22:32:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/09/04 22:33:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/09/04 22:33:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/09/04 22:33:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/09/04 22:34:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/09/04 22:34:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/09/04 22:34:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/09/04 22:37:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/09/04 22:40:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/09/04 22:40:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/09/04 22:41:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/09/04 22:41:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/09/04 22:42:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/09/04 22:42:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/09/04 22:47:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/09/04 22:49:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/09/04 22:52:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/09/04 22:53:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/09/04 22:54:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/09/04 22:54:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/09/04 22:54:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/09/04 22:54:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/09/04 23:30:20 [error] [exception.CDbException] exception 'CDbException' with message 'Relation "user" is not defined in active record class "Message".' in C:\OpenServer\domains\itpm_site\php\framework\db\ar\CActiveFinder.php:226
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\db\ar\CActiveFinder.php(296): CActiveFinder->buildJoinTree(Object(CJoinElement), 'user')
+#1 C:\OpenServer\domains\itpm_site\php\framework\db\ar\CActiveFinder.php(48): CActiveFinder->buildJoinTree(Object(CJoinElement), Array)
+#2 C:\OpenServer\domains\itpm_site\php\framework\db\ar\CActiveRecord.php(909): CActiveFinder->__construct(Object(Message), Array)
+#3 C:\OpenServer\domains\itpm_site\php\framework\db\ar\CActiveRecord.php(1355): CActiveRecord->getActiveFinder(Array)
+#4 C:\OpenServer\domains\itpm_site\php\framework\db\ar\CActiveRecord.php(1470): CActiveRecord->query(Object(CDbCriteria), true)
+#5 C:\OpenServer\domains\itpm_site\php\protected\controllers\SiteController.php(28): CActiveRecord->findAll(Array)
+#6 C:\OpenServer\domains\itpm_site\php\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#7 C:\OpenServer\domains\itpm_site\php\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\OpenServer\domains\itpm_site\php\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 C:\OpenServer\domains\itpm_site\php\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(282): CController->run('index')
+#11 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#12 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#14 {main}
+REQUEST_URI=/site/index
+---
+2013/09/04 23:30:45 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'created_at' in order clause is ambiguous. The SQL statement executed was: SELECT `t`.`id` AS `t0_c0`, `t`.`user_id` AS `t0_c1`, `t`.`text` AS `t0_c2`, `t`.`created_at` AS `t0_c3`, `user`.`id` AS `t1_c0`, `user`.`created_at` AS `t1_c1`, `user`.`username` AS `t1_c2`, `user`.`google_service_id` AS `t1_c3`, `user`.`last_login_at` AS `t1_c4` FROM `message` `t`  LEFT OUTER JOIN `user` `user` ON (`t`.`user_id`=`user`.`id`)  ORDER BY created_at DESC.
+in C:\OpenServer\domains\itpm_site\php\protected\controllers\SiteController.php (28)
+in C:\OpenServer\domains\itpm_site\php\index.php (15)
+2013/09/04 23:30:45 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'created_at' in order clause is ambiguous. The SQL statement executed was: SELECT `t`.`id` AS `t0_c0`, `t`.`user_id` AS `t0_c1`, `t`.`text` AS `t0_c2`, `t`.`created_at` AS `t0_c3`, `user`.`id` AS `t1_c0`, `user`.`created_at` AS `t1_c1`, `user`.`username` AS `t1_c2`, `user`.`google_service_id` AS `t1_c3`, `user`.`last_login_at` AS `t1_c4` FROM `message` `t`  LEFT OUTER JOIN `user` `user` ON (`t`.`user_id`=`user`.`id`)  ORDER BY created_at DESC' in C:\OpenServer\domains\itpm_site\php\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\OpenServer\domains\itpm_site\php\framework\db\ar\CActiveFinder.php(803): CDbCommand->queryAll()
+#2 C:\OpenServer\domains\itpm_site\php\framework\db\ar\CActiveFinder.php(437): CJoinElement->runQuery(Object(CJoinQuery))
+#3 C:\OpenServer\domains\itpm_site\php\framework\db\ar\CActiveFinder.php(68): CJoinElement->find(Object(CDbCriteria))
+#4 C:\OpenServer\domains\itpm_site\php\framework\db\ar\CActiveRecord.php(1356): CActiveFinder->query(Object(CDbCriteria), true)
+#5 C:\OpenServer\domains\itpm_site\php\framework\db\ar\CActiveRecord.php(1470): CActiveRecord->query(Object(CDbCriteria), true)
+#6 C:\OpenServer\domains\itpm_site\php\protected\controllers\SiteController.php(28): CActiveRecord->findAll(Array)
+#7 C:\OpenServer\domains\itpm_site\php\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#8 C:\OpenServer\domains\itpm_site\php\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\OpenServer\domains\itpm_site\php\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\OpenServer\domains\itpm_site\php\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(282): CController->run('index')
+#12 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#13 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#15 {main}
+REQUEST_URI=/site/index
+---
+2013/09/04 23:30:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/09/04 23:32:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "chat".' in C:\OpenServer\domains\itpm_site\php\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\CController.php(270): CController->missingAction('chat')
+#1 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(282): CController->run('chat')
+#2 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('site/chat/send')
+#3 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/chat/send
+HTTP_REFERER=http://itpm.local:81/site/index
+---
+2013/09/04 23:32:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "chat".' in C:\OpenServer\domains\itpm_site\php\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\CController.php(270): CController->missingAction('chat')
+#1 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(282): CController->run('chat')
+#2 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('site/chat/messa...')
+#3 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/chat/messages
+HTTP_REFERER=http://itpm.local:81/site/index
+---
+2013/09/04 23:32:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/09/04 23:34:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/09/04 23:36:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/09/04 23:37:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/09/04 23:43:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/09/04 23:47:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/09/04 23:48:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/09/04 23:53:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/09/04 23:54:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/09/04 23:54:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/09/05 00:07:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/09/05 00:10:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/09/05 00:11:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/09/05 00:22:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
