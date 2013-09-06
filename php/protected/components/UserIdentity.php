@@ -50,13 +50,13 @@ class UserIdentity extends CUserIdentity
                 $email = $this->soc_ident->service->attributes["email"];
                 $service_id = $this->soc_ident->id;
 
-                $new_user = $this->createUser($username, $email, $service_id); // Создаем нового Юзера
+                $user = $this->createUser($username, $email, $service_id); // Создаем нового Юзера
 
 //                if (isset($this->soc_ident->service->attributes["photo"])) {
 //                    $new_user->photo = $this->soc_ident->service->attributes["photo"];
 //                }
 
-                $this->user = $new_user;
+                //$this->user = $new_user;
                 $this->errorCode = self::ERROR_NONE; // ошыбок нет
             } else {
                 $this->errorCode = self::ERROR_NONE;

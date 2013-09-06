@@ -1092,3 +1092,940 @@ Stack trace:
 #3 {main}
 REQUEST_URI=/favicon.ico
 ---
+2013/09/05 14:39:50 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[HY000] [2002] Connection timed out' in /home/feoktist/ifeoktistov.com/itp/framework/db/CDbConnection.php:382
+Stack trace:
+#0 /home/feoktist/ifeoktistov.com/itp/framework/db/CDbConnection.php(330): CDbConnection->open()
+#1 /home/feoktist/ifeoktistov.com/itp/framework/db/CDbConnection.php(308): CDbConnection->setActive(true)
+#2 /home/feoktist/ifeoktistov.com/itp/framework/base/CModule.php(387): CDbConnection->init()
+#3 /home/feoktist/ifeoktistov.com/itp/framework/base/CApplication.php(450): CModule->getComponent('db')
+#4 /home/feoktist/ifeoktistov.com/itp/framework/db/ar/CActiveRecord.php(634): CApplication->getDb()
+#5 /home/feoktist/ifeoktistov.com/itp/framework/db/ar/CActiveRecord.php(667): CActiveRecord->getDbConnection()
+#6 /home/feoktist/ifeoktistov.com/itp/framework/db/ar/CActiveRecord.php(1469): CActiveRecord->getCommandBuilder()
+#7 /home/feoktist/ifeoktistov.com/itp/protected/controllers/SiteController.php(32): CActiveRecord->findAll(Array)
+#8 /home/feoktist/ifeoktistov.com/itp/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#9 /home/feoktist/ifeoktistov.com/itp/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#10 /home/feoktist/ifeoktistov.com/itp/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#11 /home/feoktist/ifeoktistov.com/itp/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /home/feoktist/ifeoktistov.com/itp/framework/web/CWebApplication.php(282): CController->run('')
+#13 /home/feoktist/ifeoktistov.com/itp/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#14 /home/feoktist/ifeoktistov.com/itp/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#15 /home/feoktist/ifeoktistov.com/itp/index.php(15): CApplication->run()
+#16 {main}
+REQUEST_URI=/
+HTTP_REFERER=http://www.google.com/url?q=http%3A%2F%2Fitp.ifeoktistov.com%2F&sa=D&sntz=1&usg=AFQjCNGcO1Hb3LkP1OtrLbtWnoejW6upwQ
+---
+2013/09/05 14:39:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/feoktist/ifeoktistov.com/itp/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/feoktist/ifeoktistov.com/itp/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /home/feoktist/ifeoktistov.com/itp/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/feoktist/ifeoktistov.com/itp/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/09/05 14:41:11 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[HY000] [2002] Connection timed out' in /home/feoktist/ifeoktistov.com/itp/framework/db/CDbConnection.php:382
+Stack trace:
+#0 /home/feoktist/ifeoktistov.com/itp/framework/db/CDbConnection.php(330): CDbConnection->open()
+#1 /home/feoktist/ifeoktistov.com/itp/framework/db/CDbConnection.php(308): CDbConnection->setActive(true)
+#2 /home/feoktist/ifeoktistov.com/itp/framework/base/CModule.php(387): CDbConnection->init()
+#3 /home/feoktist/ifeoktistov.com/itp/framework/base/CApplication.php(450): CModule->getComponent('db')
+#4 /home/feoktist/ifeoktistov.com/itp/framework/db/ar/CActiveRecord.php(634): CApplication->getDb()
+#5 /home/feoktist/ifeoktistov.com/itp/framework/db/ar/CActiveRecord.php(667): CActiveRecord->getDbConnection()
+#6 /home/feoktist/ifeoktistov.com/itp/framework/db/ar/CActiveRecord.php(1469): CActiveRecord->getCommandBuilder()
+#7 /home/feoktist/ifeoktistov.com/itp/protected/controllers/SiteController.php(32): CActiveRecord->findAll(Array)
+#8 /home/feoktist/ifeoktistov.com/itp/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#9 /home/feoktist/ifeoktistov.com/itp/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#10 /home/feoktist/ifeoktistov.com/itp/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#11 /home/feoktist/ifeoktistov.com/itp/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /home/feoktist/ifeoktistov.com/itp/framework/web/CWebApplication.php(282): CController->run('')
+#13 /home/feoktist/ifeoktistov.com/itp/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#14 /home/feoktist/ifeoktistov.com/itp/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#15 /home/feoktist/ifeoktistov.com/itp/index.php(15): CApplication->run()
+#16 {main}
+REQUEST_URI=/
+---
+2013/09/05 14:43:45 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[HY000] [2002] Connection timed out' in /home/feoktist/ifeoktistov.com/itp/framework/db/CDbConnection.php:382
+Stack trace:
+#0 /home/feoktist/ifeoktistov.com/itp/framework/db/CDbConnection.php(330): CDbConnection->open()
+#1 /home/feoktist/ifeoktistov.com/itp/framework/db/CDbConnection.php(308): CDbConnection->setActive(true)
+#2 /home/feoktist/ifeoktistov.com/itp/framework/base/CModule.php(387): CDbConnection->init()
+#3 /home/feoktist/ifeoktistov.com/itp/framework/base/CApplication.php(450): CModule->getComponent('db')
+#4 /home/feoktist/ifeoktistov.com/itp/framework/db/ar/CActiveRecord.php(634): CApplication->getDb()
+#5 /home/feoktist/ifeoktistov.com/itp/framework/db/ar/CActiveRecord.php(667): CActiveRecord->getDbConnection()
+#6 /home/feoktist/ifeoktistov.com/itp/framework/db/ar/CActiveRecord.php(1469): CActiveRecord->getCommandBuilder()
+#7 /home/feoktist/ifeoktistov.com/itp/protected/controllers/SiteController.php(32): CActiveRecord->findAll(Array)
+#8 /home/feoktist/ifeoktistov.com/itp/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#9 /home/feoktist/ifeoktistov.com/itp/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#10 /home/feoktist/ifeoktistov.com/itp/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#11 /home/feoktist/ifeoktistov.com/itp/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /home/feoktist/ifeoktistov.com/itp/framework/web/CWebApplication.php(282): CController->run('')
+#13 /home/feoktist/ifeoktistov.com/itp/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#14 /home/feoktist/ifeoktistov.com/itp/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#15 /home/feoktist/ifeoktistov.com/itp/index.php(15): CApplication->run()
+#16 {main}
+REQUEST_URI=/
+---
+2013/09/05 14:43:46 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[HY000] [2002] Connection timed out' in /home/feoktist/ifeoktistov.com/itp/framework/db/CDbConnection.php:382
+Stack trace:
+#0 /home/feoktist/ifeoktistov.com/itp/framework/db/CDbConnection.php(330): CDbConnection->open()
+#1 /home/feoktist/ifeoktistov.com/itp/framework/db/CDbConnection.php(308): CDbConnection->setActive(true)
+#2 /home/feoktist/ifeoktistov.com/itp/framework/base/CModule.php(387): CDbConnection->init()
+#3 /home/feoktist/ifeoktistov.com/itp/framework/base/CApplication.php(450): CModule->getComponent('db')
+#4 /home/feoktist/ifeoktistov.com/itp/framework/db/ar/CActiveRecord.php(634): CApplication->getDb()
+#5 /home/feoktist/ifeoktistov.com/itp/framework/db/ar/CActiveRecord.php(667): CActiveRecord->getDbConnection()
+#6 /home/feoktist/ifeoktistov.com/itp/framework/db/ar/CActiveRecord.php(1469): CActiveRecord->getCommandBuilder()
+#7 /home/feoktist/ifeoktistov.com/itp/protected/controllers/SiteController.php(32): CActiveRecord->findAll(Array)
+#8 /home/feoktist/ifeoktistov.com/itp/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#9 /home/feoktist/ifeoktistov.com/itp/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#10 /home/feoktist/ifeoktistov.com/itp/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#11 /home/feoktist/ifeoktistov.com/itp/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /home/feoktist/ifeoktistov.com/itp/framework/web/CWebApplication.php(282): CController->run('')
+#13 /home/feoktist/ifeoktistov.com/itp/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#14 /home/feoktist/ifeoktistov.com/itp/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#15 /home/feoktist/ifeoktistov.com/itp/index.php(15): CApplication->run()
+#16 {main}
+REQUEST_URI=/
+---
+2013/09/05 14:43:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/feoktist/ifeoktistov.com/itp/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/feoktist/ifeoktistov.com/itp/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /home/feoktist/ifeoktistov.com/itp/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/feoktist/ifeoktistov.com/itp/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/09/05 14:44:08 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[HY000] [2002] Connection timed out' in /home/feoktist/ifeoktistov.com/itp/framework/db/CDbConnection.php:382
+Stack trace:
+#0 /home/feoktist/ifeoktistov.com/itp/framework/db/CDbConnection.php(330): CDbConnection->open()
+#1 /home/feoktist/ifeoktistov.com/itp/framework/db/CDbConnection.php(308): CDbConnection->setActive(true)
+#2 /home/feoktist/ifeoktistov.com/itp/framework/base/CModule.php(387): CDbConnection->init()
+#3 /home/feoktist/ifeoktistov.com/itp/framework/base/CApplication.php(450): CModule->getComponent('db')
+#4 /home/feoktist/ifeoktistov.com/itp/framework/db/ar/CActiveRecord.php(634): CApplication->getDb()
+#5 /home/feoktist/ifeoktistov.com/itp/framework/db/ar/CActiveRecord.php(667): CActiveRecord->getDbConnection()
+#6 /home/feoktist/ifeoktistov.com/itp/framework/db/ar/CActiveRecord.php(1469): CActiveRecord->getCommandBuilder()
+#7 /home/feoktist/ifeoktistov.com/itp/protected/controllers/SiteController.php(32): CActiveRecord->findAll(Array)
+#8 /home/feoktist/ifeoktistov.com/itp/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#9 /home/feoktist/ifeoktistov.com/itp/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#10 /home/feoktist/ifeoktistov.com/itp/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#11 /home/feoktist/ifeoktistov.com/itp/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /home/feoktist/ifeoktistov.com/itp/framework/web/CWebApplication.php(282): CController->run('')
+#13 /home/feoktist/ifeoktistov.com/itp/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#14 /home/feoktist/ifeoktistov.com/itp/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#15 /home/feoktist/ifeoktistov.com/itp/index.php(15): CApplication->run()
+#16 {main}
+REQUEST_URI=/
+---
+2013/09/05 14:45:14 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[HY000] [2002] Operation now in progress' in /home/feoktist/ifeoktistov.com/itp/framework/db/CDbConnection.php:382
+Stack trace:
+#0 /home/feoktist/ifeoktistov.com/itp/framework/db/CDbConnection.php(330): CDbConnection->open()
+#1 /home/feoktist/ifeoktistov.com/itp/framework/db/CDbConnection.php(308): CDbConnection->setActive(true)
+#2 /home/feoktist/ifeoktistov.com/itp/framework/base/CModule.php(387): CDbConnection->init()
+#3 /home/feoktist/ifeoktistov.com/itp/framework/base/CApplication.php(450): CModule->getComponent('db')
+#4 /home/feoktist/ifeoktistov.com/itp/framework/db/ar/CActiveRecord.php(634): CApplication->getDb()
+#5 /home/feoktist/ifeoktistov.com/itp/framework/db/ar/CActiveRecord.php(667): CActiveRecord->getDbConnection()
+#6 /home/feoktist/ifeoktistov.com/itp/framework/db/ar/CActiveRecord.php(1469): CActiveRecord->getCommandBuilder()
+#7 /home/feoktist/ifeoktistov.com/itp/protected/controllers/SiteController.php(32): CActiveRecord->findAll(Array)
+#8 /home/feoktist/ifeoktistov.com/itp/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#9 /home/feoktist/ifeoktistov.com/itp/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#10 /home/feoktist/ifeoktistov.com/itp/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#11 /home/feoktist/ifeoktistov.com/itp/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /home/feoktist/ifeoktistov.com/itp/framework/web/CWebApplication.php(282): CController->run('')
+#13 /home/feoktist/ifeoktistov.com/itp/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#14 /home/feoktist/ifeoktistov.com/itp/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#15 /home/feoktist/ifeoktistov.com/itp/index.php(15): CApplication->run()
+#16 {main}
+REQUEST_URI=/
+---
+2013/09/05 14:46:06 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[HY000] [2002] Connection timed out' in /home/feoktist/ifeoktistov.com/itp/framework/db/CDbConnection.php:382
+Stack trace:
+#0 /home/feoktist/ifeoktistov.com/itp/framework/db/CDbConnection.php(330): CDbConnection->open()
+#1 /home/feoktist/ifeoktistov.com/itp/framework/db/CDbConnection.php(308): CDbConnection->setActive(true)
+#2 /home/feoktist/ifeoktistov.com/itp/framework/base/CModule.php(387): CDbConnection->init()
+#3 /home/feoktist/ifeoktistov.com/itp/framework/base/CApplication.php(450): CModule->getComponent('db')
+#4 /home/feoktist/ifeoktistov.com/itp/framework/db/ar/CActiveRecord.php(634): CApplication->getDb()
+#5 /home/feoktist/ifeoktistov.com/itp/framework/db/ar/CActiveRecord.php(667): CActiveRecord->getDbConnection()
+#6 /home/feoktist/ifeoktistov.com/itp/framework/db/ar/CActiveRecord.php(1469): CActiveRecord->getCommandBuilder()
+#7 /home/feoktist/ifeoktistov.com/itp/protected/controllers/SiteController.php(32): CActiveRecord->findAll(Array)
+#8 /home/feoktist/ifeoktistov.com/itp/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#9 /home/feoktist/ifeoktistov.com/itp/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#10 /home/feoktist/ifeoktistov.com/itp/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#11 /home/feoktist/ifeoktistov.com/itp/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /home/feoktist/ifeoktistov.com/itp/framework/web/CWebApplication.php(282): CController->run('')
+#13 /home/feoktist/ifeoktistov.com/itp/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#14 /home/feoktist/ifeoktistov.com/itp/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#15 /home/feoktist/ifeoktistov.com/itp/index.php(15): CApplication->run()
+#16 {main}
+REQUEST_URI=/
+---
+2013/09/05 14:46:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/feoktist/ifeoktistov.com/itp/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/feoktist/ifeoktistov.com/itp/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /home/feoktist/ifeoktistov.com/itp/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/feoktist/ifeoktistov.com/itp/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/09/05 14:47:23 [error] [exception.CException] exception 'CException' with message 'Property "User.username" is not defined.' in /home/feoktist/ifeoktistov.com/itp/framework/base/CComponent.php:130
+Stack trace:
+#0 /home/feoktist/ifeoktistov.com/itp/framework/db/ar/CActiveRecord.php(145): CComponent->__get('username')
+#1 /home/feoktist/ifeoktistov.com/itp/framework/validators/CRequiredValidator.php(58): CActiveRecord->__get('username')
+#2 /home/feoktist/ifeoktistov.com/itp/framework/validators/CValidator.php(213): CRequiredValidator->validateAttribute(Object(User), 'username')
+#3 /home/feoktist/ifeoktistov.com/itp/framework/base/CModel.php(159): CValidator->validate(Object(User), NULL)
+#4 /home/feoktist/ifeoktistov.com/itp/framework/db/ar/CActiveRecord.php(805): CModel->validate(NULL)
+#5 /home/feoktist/ifeoktistov.com/itp/protected/components/UserIdentity.php(36): CActiveRecord->save()
+#6 /home/feoktist/ifeoktistov.com/itp/protected/components/UserIdentity.php(53): UserIdentity->createUser('Danylo Vivchar', 'vivchar.danylo@...', 'https://www.goo...')
+#7 /home/feoktist/ifeoktistov.com/itp/protected/controllers/SiteController.php(78): UserIdentity->authenticate()
+#8 /home/feoktist/ifeoktistov.com/itp/framework/web/actions/CInlineAction.php(49): SiteController->actionLogin()
+#9 /home/feoktist/ifeoktistov.com/itp/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#10 /home/feoktist/ifeoktistov.com/itp/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#11 /home/feoktist/ifeoktistov.com/itp/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /home/feoktist/ifeoktistov.com/itp/framework/web/CWebApplication.php(282): CController->run('login')
+#13 /home/feoktist/ifeoktistov.com/itp/framework/web/CWebApplication.php(141): CWebApplication->runController('site/login')
+#14 /home/feoktist/ifeoktistov.com/itp/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#15 /home/feoktist/ifeoktistov.com/itp/index.php(15): CApplication->run()
+#16 {main}
+REQUEST_URI=/site/login?service=google&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&openid.mode=id_res&openid.op_endpoint=https%3A%2F%2Fwww.google.com%2Faccounts%2Fo8%2Fud&openid.response_nonce=2013-09-05T11%3A47%3A20ZinZ6dsxgF_uNKw&openid.return_to=http%3A%2F%2Fitp.ifeoktistov.com%2Fsite%2Flogin%3Fservice%3Dgoogle&openid.assoc_handle=1.AMlYA9XoufwXyR0W39XvMRGbINB96ClBMVey1ofkjFN39GC12TPd8N-I5SSNBICx&openid.signed=op_endpoint%2Cclaimed_id%2Cidentity%2Creturn_to%2Cresponse_nonce%2Cassoc_handle%2Cns.ext1%2Cext1.mode%2Cext1.type.firstname%2Cext1.value.firstname%2Cext1.type.lastname%2Cext1.value.lastname%2Cext1.type.email%2Cext1.value.email&openid.sig=4s1MIXF%2Fa2LIxsqa7v1mTVoCQ%2FM%3D&openid.identity=https%3A%2F%2Fwww.google.com%2Faccounts%2Fo8%2Fid%3Fid%3DAItOawnuQbywvIzikuMr7SsxKaR2RBw8KClpGSM&openid.claimed_id=https%3A%2F%2Fwww.google.com%2Faccounts%2Fo8%2Fid%3Fid%3DAItOawnuQbywvIzikuMr7SsxKaR2RBw8KClpGSM&openid.ns.ext1=http%3A%2F%2Fopenid.net%2Fsrv%2Fax%2F1.0&openid.ext1.mode=fetch_response&openid.ext1.type.firstname=http%3A%2F%2Faxschema.org%2FnamePerson%2Ffirst&openid.ext1.value.firstname=Danylo&openid.ext1.type.lastname=http%3A%2F%2Faxschema.org%2FnamePerson%2Flast&openid.ext1.value.lastname=Vivchar&openid.ext1.type.email=http%3A%2F%2Faxschema.org%2Fcontact%2Femail&openid.ext1.value.email=vivchar.danylo%40gmail.com
+---
+2013/09/05 14:53:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/feoktist/ifeoktistov.com/itp/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/feoktist/ifeoktistov.com/itp/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /home/feoktist/ifeoktistov.com/itp/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/feoktist/ifeoktistov.com/itp/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/09/05 14:54:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/feoktist/ifeoktistov.com/itp/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/feoktist/ifeoktistov.com/itp/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /home/feoktist/ifeoktistov.com/itp/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/feoktist/ifeoktistov.com/itp/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/09/05 14:54:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/feoktist/ifeoktistov.com/itp/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/feoktist/ifeoktistov.com/itp/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /home/feoktist/ifeoktistov.com/itp/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/feoktist/ifeoktistov.com/itp/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/09/05 15:06:37 [error] [exception.EAuthException] exception 'EAuthException' with message 'Unable to complete the authentication because the required data was not received.' in /home/feoktist/ifeoktistov.com/itp/protected/extensions/eauth/EOpenIDService.php:79
+Stack trace:
+#0 /home/feoktist/ifeoktistov.com/itp/protected/controllers/SiteController.php(74): EOpenIDService->authenticate()
+#1 /home/feoktist/ifeoktistov.com/itp/framework/web/actions/CInlineAction.php(49): SiteController->actionLogin()
+#2 /home/feoktist/ifeoktistov.com/itp/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#3 /home/feoktist/ifeoktistov.com/itp/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#4 /home/feoktist/ifeoktistov.com/itp/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 /home/feoktist/ifeoktistov.com/itp/framework/web/CWebApplication.php(282): CController->run('login')
+#6 /home/feoktist/ifeoktistov.com/itp/framework/web/CWebApplication.php(141): CWebApplication->runController('site/login')
+#7 /home/feoktist/ifeoktistov.com/itp/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#8 /home/feoktist/ifeoktistov.com/itp/index.php(15): CApplication->run()
+#9 {main}
+REQUEST_URI=/site/login?service=google&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&openid.mode=id_res&openid.op_endpoint=https%3A%2F%2Fwww.google.com%2Faccounts%2Fo8%2Fud&openid.response_nonce=2013-09-05T11%3A54%3A16ZGIv7SHe-9L-Axw&openid.return_to=http%3A%2F%2Fitp.ifeoktistov.com%2Fsite%2Flogin%3Fservice%3Dgoogle&openid.assoc_handle=1.AMlYA9UktphNbGUvWTKrG82oQ_Lnh8nxLmP8qGoEeL9Se8b8tVZpGdyLFSEKXZL1&openid.signed=op_endpoint%2Cclaimed_id%2Cidentity%2Creturn_to%2Cresponse_nonce%2Cassoc_handle%2Cns.ext1%2Cext1.mode%2Cext1.type.firstname%2Cext1.value.firstname%2Cext1.type.lastname%2Cext1.value.lastname%2Cext1.type.email%2Cext1.value.email&openid.sig=Y%2F%2FEGBjPbn2alm26yONLA9PHL4M%3D&openid.identity=https%3A%2F%2Fwww.google.com%2Faccounts%2Fo8%2Fid%3Fid%3DAItOawkLduDJrXQFRIOo1Mu7CvpuyDD9E8FkSlc&openid.claimed_id=https%3A%2F%2Fwww.google.com%2Faccounts%2Fo8%2Fid%3Fid%3DAItOawkLduDJrXQFRIOo1Mu7CvpuyDD9E8FkSlc&openid.ns.ext1=http%3A%2F%2Fopenid.net%2Fsrv%2Fax%2F1.0&openid.ext1.mode=fetch_response&openid.ext1.type.firstname=http%3A%2F%2Faxschema.org%2FnamePerson%2Ffirst&openid.ext1.value.firstname=Igor&openid.ext1.type.lastname=http%3A%2F%2Faxschema.org%2FnamePerson%2Flast&openid.ext1.value.lastname=Feoktistov&openid.ext1.type.email=http%3A%2F%2Faxschema.org%2Fcontact%2Femail&openid.ext1.value.email=feoktistov.igor%40gmail.com
+---
+2013/09/05 15:06:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/feoktist/ifeoktistov.com/itp/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/feoktist/ifeoktistov.com/itp/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /home/feoktist/ifeoktistov.com/itp/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/feoktist/ifeoktistov.com/itp/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/09/05 15:06:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/feoktist/ifeoktistov.com/itp/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/feoktist/ifeoktistov.com/itp/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /home/feoktist/ifeoktistov.com/itp/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/feoktist/ifeoktistov.com/itp/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/09/05 15:06:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/feoktist/ifeoktistov.com/itp/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/feoktist/ifeoktistov.com/itp/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /home/feoktist/ifeoktistov.com/itp/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/feoktist/ifeoktistov.com/itp/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/09/05 15:07:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/feoktist/ifeoktistov.com/itp/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/feoktist/ifeoktistov.com/itp/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /home/feoktist/ifeoktistov.com/itp/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/feoktist/ifeoktistov.com/itp/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/09/05 15:07:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/feoktist/ifeoktistov.com/itp/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/feoktist/ifeoktistov.com/itp/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /home/feoktist/ifeoktistov.com/itp/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/feoktist/ifeoktistov.com/itp/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/09/05 15:11:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/feoktist/ifeoktistov.com/itp/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/feoktist/ifeoktistov.com/itp/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /home/feoktist/ifeoktistov.com/itp/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/feoktist/ifeoktistov.com/itp/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/09/05 15:12:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/feoktist/ifeoktistov.com/itp/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/feoktist/ifeoktistov.com/itp/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /home/feoktist/ifeoktistov.com/itp/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/feoktist/ifeoktistov.com/itp/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/09/05 15:57:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/feoktist/ifeoktistov.com/itp/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/feoktist/ifeoktistov.com/itp/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /home/feoktist/ifeoktistov.com/itp/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/feoktist/ifeoktistov.com/itp/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/09/05 15:57:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/feoktist/ifeoktistov.com/itp/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/feoktist/ifeoktistov.com/itp/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /home/feoktist/ifeoktistov.com/itp/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/feoktist/ifeoktistov.com/itp/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/09/05 15:58:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/feoktist/ifeoktistov.com/itp/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/feoktist/ifeoktistov.com/itp/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /home/feoktist/ifeoktistov.com/itp/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/feoktist/ifeoktistov.com/itp/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/09/05 15:58:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/feoktist/ifeoktistov.com/itp/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/feoktist/ifeoktistov.com/itp/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /home/feoktist/ifeoktistov.com/itp/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/feoktist/ifeoktistov.com/itp/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/09/05 17:48:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/feoktist/ifeoktistov.com/itp/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/feoktist/ifeoktistov.com/itp/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /home/feoktist/ifeoktistov.com/itp/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/feoktist/ifeoktistov.com/itp/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/09/05 18:01:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/feoktist/ifeoktistov.com/itp/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/feoktist/ifeoktistov.com/itp/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /home/feoktist/ifeoktistov.com/itp/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/feoktist/ifeoktistov.com/itp/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/09/05 18:01:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/feoktist/ifeoktistov.com/itp/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/feoktist/ifeoktistov.com/itp/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /home/feoktist/ifeoktistov.com/itp/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/feoktist/ifeoktistov.com/itp/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/09/05 18:01:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/feoktist/ifeoktistov.com/itp/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/feoktist/ifeoktistov.com/itp/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /home/feoktist/ifeoktistov.com/itp/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/feoktist/ifeoktistov.com/itp/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/09/05 18:01:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/feoktist/ifeoktistov.com/itp/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/feoktist/ifeoktistov.com/itp/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /home/feoktist/ifeoktistov.com/itp/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/feoktist/ifeoktistov.com/itp/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/09/05 18:01:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/feoktist/ifeoktistov.com/itp/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/feoktist/ifeoktistov.com/itp/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /home/feoktist/ifeoktistov.com/itp/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/feoktist/ifeoktistov.com/itp/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/09/05 18:03:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/feoktist/ifeoktistov.com/itp/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/feoktist/ifeoktistov.com/itp/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /home/feoktist/ifeoktistov.com/itp/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/feoktist/ifeoktistov.com/itp/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/09/05 18:03:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/feoktist/ifeoktistov.com/itp/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/feoktist/ifeoktistov.com/itp/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /home/feoktist/ifeoktistov.com/itp/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/feoktist/ifeoktistov.com/itp/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/09/05 18:29:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/feoktist/ifeoktistov.com/itp/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/feoktist/ifeoktistov.com/itp/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /home/feoktist/ifeoktistov.com/itp/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/feoktist/ifeoktistov.com/itp/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/09/05 22:12:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/09/05 22:51:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/09/06 20:43:41 [error] [exception.CException] exception 'CException' with message 'Property "CWebUser.username" is not defined.' in C:\OpenServer\domains\itpm_site\php\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\auth\CWebUser.php(146): CComponent->__get('username')
+#1 C:\OpenServer\domains\itpm_site\php\protected\models\User.php(63): CWebUser->__get('username')
+#2 C:\OpenServer\domains\itpm_site\php\protected\models\User.php(77): User::isAdmin()
+#3 C:\OpenServer\domains\itpm_site\php\protected\filters\AccessFilter.php(6): User::isActivated()
+#4 C:\OpenServer\domains\itpm_site\php\framework\web\filters\CFilter.php(38): AccessFilter->preFilter(Object(CFilterChain))
+#5 C:\OpenServer\domains\itpm_site\php\framework\web\filters\CFilterChain.php(130): CFilter->filter(Object(CFilterChain))
+#6 C:\OpenServer\domains\itpm_site\php\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\OpenServer\domains\itpm_site\php\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(282): CController->run('')
+#9 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#10 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#12 {main}
+REQUEST_URI=/
+---
+2013/09/06 20:51:09 [error] [exception.CException] exception 'CException' with message 'Property "User.email" is not defined.' in C:\OpenServer\domains\itpm_site\php\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\db\ar\CActiveRecord.php(145): CComponent->__get('email')
+#1 C:\OpenServer\domains\itpm_site\php\protected\models\User.php(61): CActiveRecord->__get('email')
+#2 C:\OpenServer\domains\itpm_site\php\protected\views\admin\index.php(4): User->searchAdminUsers()
+#3 C:\OpenServer\domains\itpm_site\php\framework\web\CBaseController.php(126): require('C:\OpenServer\d...')
+#4 C:\OpenServer\domains\itpm_site\php\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\OpenServer\d...', NULL, true)
+#5 C:\OpenServer\domains\itpm_site\php\framework\web\CController.php(869): CBaseController->renderFile('C:\OpenServer\d...', NULL, true)
+#6 C:\OpenServer\domains\itpm_site\php\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#7 C:\OpenServer\domains\itpm_site\php\protected\controllers\AdminController.php(11): CController->render('index')
+#8 C:\OpenServer\domains\itpm_site\php\framework\web\actions\CInlineAction.php(49): AdminController->actionIndex()
+#9 C:\OpenServer\domains\itpm_site\php\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\OpenServer\domains\itpm_site\php\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#11 C:\OpenServer\domains\itpm_site\php\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(282): CController->run('index')
+#13 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/index')
+#14 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#16 {main}
+REQUEST_URI=/admin/index
+---
+2013/09/06 21:01:25 [error] [exception.CException] exception 'CException' with message 'Property "TbButton.visible" is not defined.' in C:\OpenServer\domains\itpm_site\php\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\zii\widgets\grid\CGridView.php(390): CComponent->__get('visible')
+#1 C:\OpenServer\domains\itpm_site\php\protected\extensions\bootstrap\widgets\TbGridView.php(91): CGridView->initColumns()
+#2 C:\OpenServer\domains\itpm_site\php\framework\zii\widgets\grid\CGridView.php(359): TbGridView->initColumns()
+#3 C:\OpenServer\domains\itpm_site\php\protected\extensions\bootstrap\widgets\TbGridView.php(49): CGridView->init()
+#4 C:\OpenServer\domains\itpm_site\php\framework\web\CBaseController.php(147): TbGridView->init()
+#5 C:\OpenServer\domains\itpm_site\php\framework\web\CBaseController.php(172): CBaseController->createWidget('bootstrap.widge...', Array)
+#6 C:\OpenServer\domains\itpm_site\php\protected\views\admin\index.php(16): CBaseController->widget('bootstrap.widge...', Array)
+#7 C:\OpenServer\domains\itpm_site\php\framework\web\CBaseController.php(126): require('C:\OpenServer\d...')
+#8 C:\OpenServer\domains\itpm_site\php\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\OpenServer\d...', NULL, true)
+#9 C:\OpenServer\domains\itpm_site\php\framework\web\CController.php(869): CBaseController->renderFile('C:\OpenServer\d...', NULL, true)
+#10 C:\OpenServer\domains\itpm_site\php\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#11 C:\OpenServer\domains\itpm_site\php\protected\controllers\AdminController.php(11): CController->render('index')
+#12 C:\OpenServer\domains\itpm_site\php\framework\web\actions\CInlineAction.php(49): AdminController->actionIndex()
+#13 C:\OpenServer\domains\itpm_site\php\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#14 C:\OpenServer\domains\itpm_site\php\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#15 C:\OpenServer\domains\itpm_site\php\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(282): CController->run('index')
+#17 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/index')
+#18 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#19 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#20 {main}
+REQUEST_URI=/admin/index
+---
+2013/09/06 21:01:52 [error] [exception.CException] exception 'CException' with message 'Property "TbButton.visible" is not defined.' in C:\OpenServer\domains\itpm_site\php\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\YiiBase.php(220): CComponent->__set('visible', true)
+#1 C:\OpenServer\domains\itpm_site\php\framework\zii\widgets\grid\CGridView.php(388): YiiBase::createComponent(Array, Object(TbGridView))
+#2 C:\OpenServer\domains\itpm_site\php\protected\extensions\bootstrap\widgets\TbGridView.php(91): CGridView->initColumns()
+#3 C:\OpenServer\domains\itpm_site\php\framework\zii\widgets\grid\CGridView.php(359): TbGridView->initColumns()
+#4 C:\OpenServer\domains\itpm_site\php\protected\extensions\bootstrap\widgets\TbGridView.php(49): CGridView->init()
+#5 C:\OpenServer\domains\itpm_site\php\framework\web\CBaseController.php(147): TbGridView->init()
+#6 C:\OpenServer\domains\itpm_site\php\framework\web\CBaseController.php(172): CBaseController->createWidget('bootstrap.widge...', Array)
+#7 C:\OpenServer\domains\itpm_site\php\protected\views\admin\index.php(17): CBaseController->widget('bootstrap.widge...', Array)
+#8 C:\OpenServer\domains\itpm_site\php\framework\web\CBaseController.php(126): require('C:\OpenServer\d...')
+#9 C:\OpenServer\domains\itpm_site\php\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\OpenServer\d...', NULL, true)
+#10 C:\OpenServer\domains\itpm_site\php\framework\web\CController.php(869): CBaseController->renderFile('C:\OpenServer\d...', NULL, true)
+#11 C:\OpenServer\domains\itpm_site\php\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#12 C:\OpenServer\domains\itpm_site\php\protected\controllers\AdminController.php(11): CController->render('index')
+#13 C:\OpenServer\domains\itpm_site\php\framework\web\actions\CInlineAction.php(49): AdminController->actionIndex()
+#14 C:\OpenServer\domains\itpm_site\php\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#15 C:\OpenServer\domains\itpm_site\php\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#16 C:\OpenServer\domains\itpm_site\php\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(282): CController->run('index')
+#18 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/index')
+#19 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#20 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#21 {main}
+REQUEST_URI=/admin/index
+---
+2013/09/06 21:09:57 [error] [exception.CException] exception 'CException' with message 'Property "TbDataColumn.up" is not defined.' in C:\OpenServer\domains\itpm_site\php\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\YiiBase.php(220): CComponent->__set('up', Array)
+#1 C:\OpenServer\domains\itpm_site\php\framework\zii\widgets\grid\CGridView.php(388): YiiBase::createComponent(Array, Object(TbGridView))
+#2 C:\OpenServer\domains\itpm_site\php\protected\extensions\bootstrap\widgets\TbGridView.php(91): CGridView->initColumns()
+#3 C:\OpenServer\domains\itpm_site\php\framework\zii\widgets\grid\CGridView.php(359): TbGridView->initColumns()
+#4 C:\OpenServer\domains\itpm_site\php\protected\extensions\bootstrap\widgets\TbGridView.php(49): CGridView->init()
+#5 C:\OpenServer\domains\itpm_site\php\framework\web\CBaseController.php(147): TbGridView->init()
+#6 C:\OpenServer\domains\itpm_site\php\framework\web\CBaseController.php(172): CBaseController->createWidget('bootstrap.widge...', Array)
+#7 C:\OpenServer\domains\itpm_site\php\protected\views\admin\index.php(19): CBaseController->widget('bootstrap.widge...', Array)
+#8 C:\OpenServer\domains\itpm_site\php\framework\web\CBaseController.php(126): require('C:\OpenServer\d...')
+#9 C:\OpenServer\domains\itpm_site\php\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\OpenServer\d...', NULL, true)
+#10 C:\OpenServer\domains\itpm_site\php\framework\web\CController.php(869): CBaseController->renderFile('C:\OpenServer\d...', NULL, true)
+#11 C:\OpenServer\domains\itpm_site\php\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#12 C:\OpenServer\domains\itpm_site\php\protected\controllers\AdminController.php(11): CController->render('index')
+#13 C:\OpenServer\domains\itpm_site\php\framework\web\actions\CInlineAction.php(49): AdminController->actionIndex()
+#14 C:\OpenServer\domains\itpm_site\php\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#15 C:\OpenServer\domains\itpm_site\php\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#16 C:\OpenServer\domains\itpm_site\php\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(282): CController->run('index')
+#18 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/index')
+#19 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#20 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#21 {main}
+REQUEST_URI=/admin/index
+HTTP_REFERER=http://itpm.local:81/
+---
+2013/09/06 21:24:35 [error] [exception.CException] exception 'CException' with message 'Property "TbDataColumn.evaluateHtmlOptions" is not defined.' in C:\OpenServer\domains\itpm_site\php\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\YiiBase.php(220): CComponent->__set('evaluateHtmlOpt...', true)
+#1 C:\OpenServer\domains\itpm_site\php\framework\zii\widgets\grid\CGridView.php(388): YiiBase::createComponent(Array, Object(TbGridView))
+#2 C:\OpenServer\domains\itpm_site\php\protected\extensions\bootstrap\widgets\TbGridView.php(91): CGridView->initColumns()
+#3 C:\OpenServer\domains\itpm_site\php\framework\zii\widgets\grid\CGridView.php(359): TbGridView->initColumns()
+#4 C:\OpenServer\domains\itpm_site\php\protected\extensions\bootstrap\widgets\TbGridView.php(49): CGridView->init()
+#5 C:\OpenServer\domains\itpm_site\php\framework\web\CBaseController.php(147): TbGridView->init()
+#6 C:\OpenServer\domains\itpm_site\php\framework\web\CBaseController.php(172): CBaseController->createWidget('bootstrap.widge...', Array)
+#7 C:\OpenServer\domains\itpm_site\php\protected\views\admin\index.php(28): CBaseController->widget('bootstrap.widge...', Array)
+#8 C:\OpenServer\domains\itpm_site\php\framework\web\CBaseController.php(126): require('C:\OpenServer\d...')
+#9 C:\OpenServer\domains\itpm_site\php\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\OpenServer\d...', NULL, true)
+#10 C:\OpenServer\domains\itpm_site\php\framework\web\CController.php(869): CBaseController->renderFile('C:\OpenServer\d...', NULL, true)
+#11 C:\OpenServer\domains\itpm_site\php\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#12 C:\OpenServer\domains\itpm_site\php\protected\controllers\AdminController.php(11): CController->render('index')
+#13 C:\OpenServer\domains\itpm_site\php\framework\web\actions\CInlineAction.php(49): AdminController->actionIndex()
+#14 C:\OpenServer\domains\itpm_site\php\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#15 C:\OpenServer\domains\itpm_site\php\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#16 C:\OpenServer\domains\itpm_site\php\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(282): CController->run('index')
+#18 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/index')
+#19 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#20 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#21 {main}
+REQUEST_URI=/admin/index
+---
+2013/09/06 21:33:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Not found.' in C:\OpenServer\domains\itpm_site\php\protected\controllers\AdminController.php:8
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\actions\CInlineAction.php(49): AdminController->actionIndex()
+#1 C:\OpenServer\domains\itpm_site\php\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#2 C:\OpenServer\domains\itpm_site\php\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#3 C:\OpenServer\domains\itpm_site\php\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(282): CController->run('index')
+#5 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/index')
+#6 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#7 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#8 {main}
+REQUEST_URI=/admin/index
+---
+2013/09/06 21:35:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/09/06 21:35:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/09/06 21:36:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/09/06 21:36:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/09/06 21:37:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/09/06 21:39:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/09/06 21:39:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/09/06 21:39:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/09/06 21:41:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/09/06 21:42:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/09/06 21:43:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/09/06 21:43:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/09/06 21:43:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/09/06 21:44:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/09/06 21:44:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/09/06 21:45:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/09/06 21:47:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/09/06 21:47:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/09/06 21:48:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/09/06 21:48:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/09/06 21:49:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/09/06 21:49:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/09/06 21:49:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/09/06 21:50:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/09/06 21:50:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/09/06 21:51:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/09/06 21:51:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/09/06 21:52:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/09/06 21:58:38 [error] [exception.CException] exception 'CException' with message 'The first element in a filter configuration must be the filter class.' in C:\OpenServer\domains\itpm_site\php\framework\web\filters\CFilterChain.php:77
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\CController.php(291): CFilterChain::create(Object(SiteController), Object(CInlineAction), Array)
+#1 C:\OpenServer\domains\itpm_site\php\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#2 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(282): CController->run('')
+#3 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#4 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#6 {main}
+REQUEST_URI=/
+---
+2013/09/06 22:03:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\OpenServer\domains\itpm_site\php\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/images/aj...')
+#3 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/admin/images/aja-loader.gei
+HTTP_REFERER=http://itpm.local:81/admin/index
+---
+2013/09/06 22:04:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/09/06 22:04:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\OpenServer\domains\itpm_site\php\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/images/aj...')
+#3 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/admin/images/aja-loader.gif
+HTTP_REFERER=http://itpm.local:81/admin/index
+---
+2013/09/06 22:04:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/09/06 22:04:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/09/06 22:04:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/aja-loader.gif".' in C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('images/aja-load...')
+#1 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/aja-loader.gif
+HTTP_REFERER=http://itpm.local:81/admin/index
+---
+2013/09/06 22:04:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/09/06 22:04:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/aja-loader.gif".' in C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('images/aja-load...')
+#1 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/aja-loader.gif
+HTTP_REFERER=http://itpm.local:81/admin/index
+---
+2013/09/06 22:05:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/aja-loader.gif".' in C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('images/aja-load...')
+#1 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/aja-loader.gif
+HTTP_REFERER=http://itpm.local:81/admin/index
+---
+2013/09/06 22:07:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/09/06 22:07:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/09/06 22:08:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/09/06 22:08:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/09/06 22:08:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Not found.' in C:\OpenServer\domains\itpm_site\php\protected\controllers\AdminController.php:8
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\actions\CInlineAction.php(49): AdminController->actionIndex()
+#1 C:\OpenServer\domains\itpm_site\php\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#2 C:\OpenServer\domains\itpm_site\php\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#3 C:\OpenServer\domains\itpm_site\php\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(282): CController->run('index')
+#5 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/index')
+#6 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#7 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#8 {main}
+REQUEST_URI=/admin/index
+HTTP_REFERER=http://itpm.local:81/site/view
+---
+2013/09/06 22:08:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Not found.' in C:\OpenServer\domains\itpm_site\php\protected\controllers\AdminController.php:8
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\actions\CInlineAction.php(49): AdminController->actionIndex()
+#1 C:\OpenServer\domains\itpm_site\php\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#2 C:\OpenServer\domains\itpm_site\php\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#3 C:\OpenServer\domains\itpm_site\php\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(282): CController->run('index')
+#5 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/index')
+#6 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#7 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#8 {main}
+REQUEST_URI=/admin/index
+---

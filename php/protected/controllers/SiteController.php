@@ -16,33 +16,46 @@ class SiteController extends Controller
         );
     }
 
+    public function filters()
+    {
+        return array(
+            array(
+                'application.filters.AccessFilter + view',
+            ),
+        );
+    }
+
     /**
      * This is the default 'index' action that is invoked
      * when an action is not explicitly requested by users.
      */
     public function actionIndex()
     {
+        if(!Yii::app()->user->isGuest){
+            $this->redirect('view');
+        }
+
         $google_img = CHtml::image('/images/google-login.png');
         $google_img_link = CHtml::link($google_img, $this->createUrl('login', array('service' => 'google')));
 
+        $this->render('/site/index', array(
+                'google_img_link' => $google_img_link,
+            )
+        );
+    }
+
+    public function actionView(){
         $messages = Message::model()->with('user')->findAll(array(
                 'order' => 't.created_at DESC',
-                "limit" => 20,
+                "limit" => 50,
             )
         );
 
         $this->render('/site/index', array(
-                'google_img_link' => $google_img_link,
                 'messages' => $messages,
             )
         );
     }
-
-    public function actionTst()
-    {
-        $this->renderPartial('/site/tst', array(), false, true);
-    }
-
 
     /**
      * This is the action to handle external exceptions.

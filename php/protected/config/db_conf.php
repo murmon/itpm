@@ -1,9 +1,9 @@
 <?php
 if (IS_PRODUCTION) {    // CONFIG DB CONNECT HERE =)
     return array(
-        'connectionString' => 'mysql:host=127.5.177.2;dbname=itpm',
-        'username' => 'adminabt1wmM',
-        'password' => 'T7Z78LpcJEiH',
+        'connectionString' => 'mysql:host=feoktist.mysql.ukraine.com.ua;dbname=feoktist_itp',
+        'username' => 'feoktist_itp',
+        'password' => 'zaygvh9k',
     );
 } else {
     return array(

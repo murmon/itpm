@@ -52,5 +52,7 @@ $(function () {
     }
 
     updateMessages();
+
+    setInterval(updateMessages, 10000);
 });
 

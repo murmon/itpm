@@ -55,6 +55,25 @@ class UserController extends Controller
 		));
 	}
 
+    public function actionChangeStatus(){
+        if(Yii::app()->request->isAjaxRequest &&
+            isset($_POST['new_status']) &&
+            isset($_POST['user_id']) &&
+            User::isAdmin()){
+
+            $usr = User::load($_POST['user_id']);
+            $usr->status = $_POST['new_status'];
+
+            if(!$usr->save()){
+                //todo
+            }
+
+            $response['status'] = $usr->status;
+
+            echo json_encode($response);
+        }
+    }
+
 	/**
 	 * Creates a new model.
 	 * If creation is successful, the browser will be redirected to the 'view' page.
