@@ -1,0 +1,70 @@
+div.navbar{
+    background-color: #aaa;
+}
+
+div.row-fluid{
+    margin-bottom: 10px;
+}
+
+div.span6{
+    height: 200px;
+}
+
+.messageInp{
+    margin: 15px;
+
+}
+
+#appendedInputButton{
+    width: 150px;
+}
+
+.messageWrap{
+    border: 2px dashed #707070;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.message{
+    border-top: 2px solid #707070;
+    padding: 5px;
+}
+
+.time{
+    float: right;
+    margin-right: 10px;
+}
+
+.name{
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+.link{
+    color: #000;
+    display: block;
+    height: 20px;
+    border: 2px solid #9c9c9c;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 5px;
+    background: #f8f8f8;
+}
+
+.link span{
+    color: #000000;
+}
+
+.span6, .ui-widget-content{
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+
+h3{
+    padding: 10px;
+}
