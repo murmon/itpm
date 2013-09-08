@@ -64,6 +64,9 @@ return array(
             'services' => array(
                 'google' => array(
                     'class' => 'GoogleOpenIDService',
+//                    'class' => 'GoogleOAuthService',
+//                    'client_id' => '133676928039-3jc5bqa1jh4aji2utos8blams1hifqjs.apps.googleusercontent.com',
+//                    'client_secret' => 'ge6XEBfUY2xR_aMp-EqhFmCG',
                 )
             )
         ),
@@ -79,9 +82,9 @@ return array(
 			),
 		),
 
-		'db'=>array(
-			'connectionString' => 'sqlite:'.dirname(__FILE__).'/../data/testdrive.db',
-		),
+//		'db'=>array(
+//			'connectionString' => 'sqlite:'.dirname(__FILE__).'/../data/testdrive.db',
+//		),
 		// uncomment the following to use a MySQL database
 		/*
 		'db'=>array(

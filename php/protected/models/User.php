@@ -22,7 +22,8 @@ class User extends CActiveRecord
     public function relations()
     {
         return array(
-            'users' => array(self::HAS_MANY, 'Message', 'user_id')
+            'message' => array(self::HAS_MANY, 'Message', 'user_id'),
+            'post' => array(self::HAS_MANY, 'Post', 'user_id'),
         );
     }
 

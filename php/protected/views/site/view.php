@@ -1,3 +1,9 @@
+<?php
+Yii::app()->clientScript->registerScriptFile('http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js', CClientScript::POS_BEGIN);
+Yii::app()->clientScript->registerScriptFile('https://rawgithub.com/timrwood/moment/2.1.0/min/moment.min.js', CClientScript::POS_BEGIN);
+Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl.'/js/pages/chat.js', CClientScript::POS_BEGIN);
+?>
+
 <style type="text/css">
     div.input-append{
         margin-top: 5px;

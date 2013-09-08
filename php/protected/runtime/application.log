@@ -2029,3 +2029,563 @@ Stack trace:
 #8 {main}
 REQUEST_URI=/admin/index
 ---
+2013/09/06 22:43:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/09/06 22:50:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/09/06 22:51:15 [error] [exception.CException] exception 'CException' with message 'Property "User.status" is not defined.' in C:\OpenServer\domains\itpm_site\php\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\db\ar\CActiveRecord.php(145): CComponent->__get('status')
+#1 C:\OpenServer\domains\itpm_site\php\protected\models\User.php(104): CActiveRecord->__get('status')
+#2 C:\OpenServer\domains\itpm_site\php\protected\filters\AccessFilter.php(6): User::isActivated()
+#3 C:\OpenServer\domains\itpm_site\php\framework\web\filters\CFilter.php(38): AccessFilter->preFilter(Object(CFilterChain))
+#4 C:\OpenServer\domains\itpm_site\php\framework\web\filters\CFilterChain.php(130): CFilter->filter(Object(CFilterChain))
+#5 C:\OpenServer\domains\itpm_site\php\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\OpenServer\domains\itpm_site\php\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(282): CController->run('view')
+#8 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('site/view')
+#9 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#11 {main}
+REQUEST_URI=/site/view
+---
+2013/09/06 22:57:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "view".' in C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('view')
+#1 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/view
+---
+2013/09/06 23:09:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "view".' in C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('view')
+#1 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/view
+---
+2013/09/06 23:36:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/09/06 23:37:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/09/06 23:41:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/09/06 23:47:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/09/06 23:49:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/09/06 23:50:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/09/06 23:53:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/09/06 23:56:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/09/06 23:56:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/09/06 23:57:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/09/06 23:57:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/09/06 23:57:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/09/06 23:57:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/09/06 23:58:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/09/06 23:58:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/09/06 23:59:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/09/06 23:59:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/09/07 00:02:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/09/07 00:02:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/09/07 00:02:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/09/07 00:03:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/09/07 00:03:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/09/07 00:05:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/09/07 00:05:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/09/07 00:05:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/09/07 00:09:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/09/07 00:09:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/09/07 00:09:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/09/07 00:13:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/09/07 00:13:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/09/07 00:17:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/09/07 00:17:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/09/07 00:27:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/09/07 00:27:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/09/07 00:29:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/09/07 00:29:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/09/07 00:32:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/09/07 00:32:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/09/07 00:32:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/09/07 00:37:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/09/07 00:37:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/09/07 00:38:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/09/07 00:38:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/09/07 00:40:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/09/07 00:40:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/09/07 00:41:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/09/07 00:41:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/09/07 00:42:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/09/07 00:43:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/09/07 00:45:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/09/07 00:45:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/09/07 00:48:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/09/07 00:48:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/09/08 22:06:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/09/08 22:06:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/09/08 22:17:52 [error] [exception.CException] exception 'CException' with message 'GoogleOpenIDService and its behaviors do not have a method or closure named "giveMeClientId".' in C:\OpenServer\domains\itpm_site\php\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\protected\components\UserIdentity.php(51): CComponent->__call('giveMeClientId', Array)
+#1 C:\OpenServer\domains\itpm_site\php\protected\components\UserIdentity.php(51): GoogleOpenIDService->giveMeClientId()
+#2 C:\OpenServer\domains\itpm_site\php\protected\controllers\SiteController.php(91): UserIdentity->authenticate()
+#3 C:\OpenServer\domains\itpm_site\php\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#4 C:\OpenServer\domains\itpm_site\php\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\OpenServer\domains\itpm_site\php\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\OpenServer\domains\itpm_site\php\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\OpenServer\domains\itpm_site\php\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(282): CController->run('login')
+#9 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#10 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#12 {main}
+REQUEST_URI=/site/login?service=google&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&openid.mode=id_res&openid.op_endpoint=https%3A%2F%2Fwww.google.com%2Faccounts%2Fo8%2Fud&openid.response_nonce=2013-09-08T18%3A17%3A50Zep_B_mOTawpcuw&openid.return_to=http%3A%2F%2Flocalhost%3A81%2Fsite%2Flogin%3Fservice%3Dgoogle&openid.assoc_handle=1.AMlYA9UiIxRU2XwajEVHeDFnkCVDUpn4Y5oQRoOq5GejpcDxnc5DP7Rg5-vLw8sI&openid.signed=op_endpoint%2Cclaimed_id%2Cidentity%2Creturn_to%2Cresponse_nonce%2Cassoc_handle%2Cns.ext1%2Cext1.mode%2Cext1.type.firstname%2Cext1.value.firstname%2Cext1.type.lastname%2Cext1.value.lastname%2Cext1.type.email%2Cext1.value.email&openid.sig=04P1dDzPjiDM93i9kFgsKwFJZzk%3D&openid.identity=https%3A%2F%2Fwww.google.com%2Faccounts%2Fo8%2Fid%3Fid%3DAItOawkkU5FvprCV_LNAXFfdmyw2wcFSPClr2xg&openid.claimed_id=https%3A%2F%2Fwww.google.com%2Faccounts%2Fo8%2Fid%3Fid%3DAItOawkkU5FvprCV_LNAXFfdmyw2wcFSPClr2xg&openid.ns.ext1=http%3A%2F%2Fopenid.net%2Fsrv%2Fax%2F1.0&openid.ext1.mode=fetch_response&openid.ext1.type.firstname=http%3A%2F%2Faxschema.org%2FnamePerson%2Ffirst&openid.ext1.value.firstname=Danylo&openid.ext1.type.lastname=http%3A%2F%2Faxschema.org%2FnamePerson%2Flast&openid.ext1.value.lastname=Vivchar&openid.ext1.type.email=http%3A%2F%2Faxschema.org%2Fcontact%2Femail&openid.ext1.value.email=vivchar.danylo%40gmail.com
+---
+2013/09/08 22:18:40 [error] [exception.EAuthException] exception 'EAuthException' with message 'Unable to complete the authentication because the required data was not received.' in C:\OpenServer\domains\itpm_site\php\protected\extensions\eauth\EOpenIDService.php:79
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\protected\controllers\SiteController.php(87): EOpenIDService->authenticate()
+#1 C:\OpenServer\domains\itpm_site\php\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#2 C:\OpenServer\domains\itpm_site\php\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#3 C:\OpenServer\domains\itpm_site\php\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#4 C:\OpenServer\domains\itpm_site\php\framework\web\CController.php(291): CFilterChain->run()
+#5 C:\OpenServer\domains\itpm_site\php\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(282): CController->run('login')
+#7 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#8 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#10 {main}
+REQUEST_URI=/site/login?service=google&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&openid.mode=id_res&openid.op_endpoint=https%3A%2F%2Fwww.google.com%2Faccounts%2Fo8%2Fud&openid.response_nonce=2013-09-08T18%3A17%3A50Zep_B_mOTawpcuw&openid.return_to=http%3A%2F%2Flocalhost%3A81%2Fsite%2Flogin%3Fservice%3Dgoogle&openid.assoc_handle=1.AMlYA9UiIxRU2XwajEVHeDFnkCVDUpn4Y5oQRoOq5GejpcDxnc5DP7Rg5-vLw8sI&openid.signed=op_endpoint%2Cclaimed_id%2Cidentity%2Creturn_to%2Cresponse_nonce%2Cassoc_handle%2Cns.ext1%2Cext1.mode%2Cext1.type.firstname%2Cext1.value.firstname%2Cext1.type.lastname%2Cext1.value.lastname%2Cext1.type.email%2Cext1.value.email&openid.sig=04P1dDzPjiDM93i9kFgsKwFJZzk%3D&openid.identity=https%3A%2F%2Fwww.google.com%2Faccounts%2Fo8%2Fid%3Fid%3DAItOawkkU5FvprCV_LNAXFfdmyw2wcFSPClr2xg&openid.claimed_id=https%3A%2F%2Fwww.google.com%2Faccounts%2Fo8%2Fid%3Fid%3DAItOawkkU5FvprCV_LNAXFfdmyw2wcFSPClr2xg&openid.ns.ext1=http%3A%2F%2Fopenid.net%2Fsrv%2Fax%2F1.0&openid.ext1.mode=fetch_response&openid.ext1.type.firstname=http%3A%2F%2Faxschema.org%2FnamePerson%2Ffirst&openid.ext1.value.firstname=Danylo&openid.ext1.type.lastname=http%3A%2F%2Faxschema.org%2FnamePerson%2Flast&openid.ext1.value.lastname=Vivchar&openid.ext1.type.email=http%3A%2F%2Faxschema.org%2Fcontact%2Femail&openid.ext1.value.email=vivchar.danylo%40gmail.com
+---
+2013/09/08 22:21:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/09/08 22:22:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/09/08 22:24:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/09/08 22:24:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/09/08 22:25:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\itpm_site\php\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 C:\OpenServer\domains\itpm_site\php\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\itpm_site\php\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---

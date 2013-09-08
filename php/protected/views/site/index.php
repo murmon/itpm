@@ -8,7 +8,12 @@ Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl.'/js/flipclock/
 Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl.'/js/flipclock/flipclock.min.js', CClientScript::POS_BEGIN);
 
 Yii::app()->clientScript->registerScriptFile('https://rawgithub.com/timrwood/moment/2.1.0/min/moment.min.js', CClientScript::POS_BEGIN);
-Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl.'/js/pages/chat.js', CClientScript::POS_BEGIN);
+
+
+//Yii::app()->clientScript->registerScriptFile('https://apis.google.com/js/client.js?onload=OnLoadCallback', CClientScript::POS_BEGIN);
+//Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl.'/js/pages/index.js', CClientScript::POS_BEGIN);
+
+
 
 ?>
 

@@ -24,20 +24,23 @@ class GoogleOAuthService extends EOAuth2Service {
 
 	protected $client_id = '';
 	protected $client_secret = '';
-	protected $scope = 'https://www.googleapis.com/auth/userinfo.profile';
+	//protected $scope = 'https://www.googleapis.com/auth/userinfo.profile';
+	protected $scope = 'https://www.googleapis.com/auth/userinfo.profile https://www.googleapis.com/auth/plus.login https://www.googleapis.com/auth/drive.file https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/analytics.readonly';
 	protected $providerOptions = array(
 		'authorize' => 'https://accounts.google.com/o/oauth2/auth',
 		'access_token' => 'https://accounts.google.com/o/oauth2/token',
 	);
 	
 	protected function fetchAttributes() {
-		$info = (array)$this->makeSignedRequest('https://www.googleapis.com/oauth2/v1/userinfo');
+		$info = (array)$this->makeSignedRequest('https://www.googleapis.com/oauth2/v2/userinfo');
 				
 		$this->attributes['id'] = $info['id'];
 		$this->attributes['name'] = $info['name'];
+
+        $this->attributes['email'] = $info['email'];
 		
-		if (!empty($info['link']))
-			$this->attributes['url'] = $info['link'];
+//		if (!empty($info['link']))
+//			$this->attributes['url'] = $info['link'];
 		
 		/*if (!empty($info['gender']))
 			$this->attributes['gender'] = $info['gender'] == 'male' ? 'M' : 'F';
@@ -83,6 +86,14 @@ class GoogleOAuthService extends EOAuth2Service {
 		$this->setState('expires', time() + $token->expires_in - 60);
 		$this->access_token = $token->access_token;
 	}
+
+    public function giveMeAccessToken(){
+        return $this->access_token;
+    }
+
+    public function giveMeClientId(){
+        return $this->client_id;
+    }
 		
 	/**
 	 * Makes the curl request to the url.

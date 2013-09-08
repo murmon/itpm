@@ -51,7 +51,7 @@ class SiteController extends Controller
             )
         );
 
-        $this->render('/site/index', array(
+        $this->render('/site/view', array(
                 'messages' => $messages,
             )
         );

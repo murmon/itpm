@@ -43,7 +43,8 @@ $(function () {
                 data.forEach(function(el){
                     console.log(el.created_at);
                     msgs += "<div class='chat-msg'>" +
-                        "<span class='time_ago'>" + moment(el.created_at).fromNow() + "</span><strong>" + el.username + "</strong>: <span class='chat-text'>" + el.text + "</span>" +
+                        "<span class='time_ago'>" + moment(el.created_at).fromNow() + "</span><strong>" +
+                        el.username + "</strong>: <span class='chat-text'>" + el.text + "</span>" +
                         "</div>";
                 });
                 $msgs_area.html(msgs);
@@ -53,6 +54,6 @@ $(function () {
 
     updateMessages();
 
-    setInterval(updateMessages, 10000);
+    setInterval(updateMessages, 2000);
 });
 
